@@ -1,11 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Form, Input, Button, Radio, Typography, Select, Space, Divider } from 'antd';
 import { UserOutlined, LockOutlined, InfoCircleOutlined, CheckCircleOutlined, EditOutlined, SettingOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom'; // Importar useNavigate para redirecionamento
 
 const { Title } = Typography;
 const { Option } = Select;
 
 const Login = () => {
+  const [isSecondCompany, setIsSecondCompany] = useState(false);
+  const navigate = useNavigate(); // Instanciar o hook useNavigate
+
+  // Verificar se o usuário já está logado
+  useEffect(() => {
+    const loginData = localStorage.getItem('loginData');
+    if (loginData) {
+      navigate('/pagina-gr'); // Redireciona se o usuário já estiver logado
+    }
+  }, [navigate]);
+
+  const handleFinish = (values) => {
+    const formData = { ...values };
+
+    // Capturar o texto do conteúdo do option selecionado no Select
+    const patenteSelect = document.querySelector('.ant-select-selection-item');
+    const patenteText = patenteSelect ? patenteSelect.textContent : '';
+    formData.patente = patenteText;
+
+    // Armazenar dados no local storage
+    localStorage.setItem('loginData', JSON.stringify(formData));
+
+    // Redirecionar para a nova página
+    navigate('/pagina-treinos'); // Substitua '/new-page' pela rota desejada
+  };
+
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', backgroundColor: '#f0f2f5', padding: '0 16px' }}>
       <Card
@@ -19,7 +46,7 @@ const Login = () => {
           name="loginForm"
           initialValues={{ remember: true }}
           layout="vertical"
-          onFinish={(values) => console.log('Form values:', values)}
+          onFinish={handleFinish}
           style={{ maxWidth: 400, margin: '0 auto' }}
         >
           <Form.Item
@@ -35,19 +62,19 @@ const Login = () => {
             label="Patente"
             rules={[{ required: true, message: 'Por favor, selecione sua patente!' }]}
           >
-            <Select placeholder="Selecione sua patente">
+            <Select placeholder="Selecione sua patente" id="patente">
               <Option value="terceiro-sargento">Terceiro Sargento</Option>
               <Option value="segundo-sargento">Segundo Sargento</Option>
               <Option value="primeiro-sargento">Primeiro Sargento</Option>
               <Option value="subtenente">Subtenente</Option>
               <Option value="aluno-espcex">Aluno da EsPCEx</Option>
               <Option value="cadete">Cadete da AMAN</Option>
-              <Option value="aspirante">Aspirante-a-Oficial</Option>
+              <Option value="aspirante">Aspirante a Oficial</Option>
               <Option value="segundo-tenente">Segundo Tenente</Option>
               <Option value="primeiro-tenente">Primeiro Tenente</Option>
               <Option value="capitao">Capitão</Option>
               <Option value="major">Major</Option>
-              <Option value="tenente-coronel">Tenente-Coronel</Option>
+              <Option value="tenente-coronel">Tenente Coronel</Option>
               <Option value="coronel">Coronel</Option>
               <Option value="gdb">General de Brigada</Option>
               <Option value="gdd">General de Divisão</Option>
@@ -70,10 +97,10 @@ const Login = () => {
 
           <Form.Item
             name="segundaCompanhia"
-            label="Você é da 2ª Companhia?"
+            label="Você é Oficial da 2ª Companhia?"
             rules={[{ required: true, message: 'Por favor, selecione se é da 2ª Companhia!' }]}
           >
-            <Radio.Group>
+            <Radio.Group onChange={(e) => setIsSecondCompany(e.target.value === 'sim')}>
               <Space direction="horizontal">
                 <Radio value="sim">Sim</Radio>
                 <Radio value="nao">Não</Radio>
@@ -81,13 +108,15 @@ const Login = () => {
             </Radio.Group>
           </Form.Item>
 
-          <Form.Item
-            name="senhaCompanhia"
-            label="Senha da 2ª Companhia"
-            rules={[{ required: true, message: 'Por favor, insira a senha!' }]}
-          >
-            <Input.Password prefix={<LockOutlined />} placeholder="Digite a senha" />
-          </Form.Item>
+          {isSecondCompany && (
+            <Form.Item
+              name="senhaCompanhia"
+              label="Senha da 2ª Companhia"
+              rules={[{ required: true, message: 'Por favor, insira a senha!' }]}
+            >
+              <Input.Password prefix={<LockOutlined />} placeholder="Digite a senha" />
+            </Form.Item>
+          )}
 
           <Form.Item>
             <Button type="primary" htmlType="submit" block>
@@ -99,7 +128,7 @@ const Login = () => {
         <Divider />
 
         <Title level={5} style={{ textAlign: 'center' }}>
-          <InfoCircleOutlined /> Benefícios de Usar o Sistema
+          <InfoCircleOutlined /> Benefícios
         </Title>
         <ul style={{ paddingLeft: 0, listStyleType: 'none' }}>
           <li><CheckCircleOutlined style={{ marginRight: 8 }} /> Salve suas informações de forma segura e personalizada.</li>
