@@ -44,6 +44,34 @@ const EditModal = ({ open, onCancel, onSave }) => {
   const handleFinish = (values) => {
     const formData = { ...values };
 
+    // Verifica e adiciona propriedades ao localStorage com base na patente selecionada
+    const patente = formData.patente;
+    if (patente) {
+      if ([
+        "terceiro-sargento",
+        "segundo-sargento",
+        "primeiro-sargento",
+        "subtenente",
+        "aluno-espcex",
+        "cadete"
+      ].includes(patente)) {
+        formData.corpoDePracas = "sim";
+      } else if ([
+        "aspirante",
+        "segundo-tenente",
+        "primeiro-tenente",
+        "capitao",
+        "major",
+        "tenente-coronel",
+        "coronel",
+        "gdb",
+        "gdd",
+        "gde"
+      ].includes(patente)) {
+        formData.corpoDeOficiais = "sim";
+      }
+    }
+
     if (
       isSecondCompany &&
       formData.senhaCompanhia !== COMPANHIA_SENHA_CORRETA

@@ -23,6 +23,35 @@ const Login = () => {
   const handleFinish = (values) => {
     const formData = { ...values };
 
+    // Verifica e adiciona propriedades ao localStorage com base na patente selecionada
+    const patente = formData.patente;
+    if (patente) {
+      if ([
+        "terceiro-sargento",
+        "segundo-sargento",
+        "primeiro-sargento",
+        "subtenente",
+        "aluno-espcex",
+        "cadete"
+      ].includes(patente)) {
+        formData.corpoDePracas = "sim";
+      } else if ([
+        "aspirante",
+        "segundo-tenente",
+        "primeiro-tenente",
+        "capitao",
+        "major",
+        "tenente-coronel",
+        "coronel",
+        "gdb",
+        "gdd",
+        "gde"
+      ].includes(patente)) {
+        formData.corpoDeOficiais = "sim";
+      }
+    }
+
+    // Verifica senha da 2ª Companhia, se necessário
     if (isSecondCompany && formData.senhaCompanhia !== COMPANHIA_SENHA_CORRETA) {
       console.log("Senha da 2ª Companhia:", formData.senhaCompanhia);
       return;
