@@ -1,45 +1,57 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+// prettier-ignore
 import { Card, Form, Input, Button, Radio, Typography, Select, Space, Divider } from 'antd';
+// prettier-ignore
 import { UserOutlined, LockOutlined, InfoCircleOutlined, CheckCircleOutlined, EditOutlined, SettingOutlined } from '@ant-design/icons';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate para redirecionamento
+import { useNavigate } from "react-router-dom";
 
 const { Title } = Typography;
 const { Option } = Select;
 
 const Login = () => {
   const [isSecondCompany, setIsSecondCompany] = useState(false);
-  const navigate = useNavigate(); // Instanciar o hook useNavigate
+  const navigate = useNavigate();
+  const COMPANHIA_SENHA_CORRETA = "cpSegunda";
 
-  // Verificar se o usuário já está logado
   useEffect(() => {
-    const loginData = localStorage.getItem('loginData');
+    const loginData = localStorage.getItem("loginData");
     if (loginData) {
-      navigate('/pagina-gr'); // Redireciona se o usuário já estiver logado
+      navigate("/pagina-treinos");
     }
   }, [navigate]);
 
   const handleFinish = (values) => {
     const formData = { ...values };
 
-    // Capturar o texto do conteúdo do option selecionado no Select
-    const patenteSelect = document.querySelector('.ant-select-selection-item');
-    const patenteText = patenteSelect ? patenteSelect.textContent : '';
+    if (isSecondCompany && formData.senhaCompanhia !== COMPANHIA_SENHA_CORRETA) {
+      console.log("Senha da 2ª Companhia:", formData.senhaCompanhia);
+      return;
+    }
+
+    const patenteSelect = document.querySelector(".ant-select-selection-item");
+    const patenteText = patenteSelect ? patenteSelect.textContent : "";
     formData.patente = patenteText;
 
-    // Armazenar dados no local storage
-    localStorage.setItem('loginData', JSON.stringify(formData));
-
-    // Redirecionar para a nova página
-    navigate('/pagina-treinos'); // Substitua '/new-page' pela rota desejada
+    localStorage.setItem("loginData", JSON.stringify(formData));
+    navigate("/pagina-treinos");
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', backgroundColor: '#f0f2f5', padding: '0 16px' }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+        backgroundColor: "#f0f2f5",
+        padding: "0 16px",
+      }}
+    >
       <Card
-        style={{ maxWidth: 500, width: '100%', margin: '0 auto' }}
+        style={{ maxWidth: 500, width: "100%", margin: "0 auto" }}
         bordered={false}
       >
-        <Title level={3} style={{ textAlign: 'center', marginBottom: '24px' }}>
+        <Title level={3} style={{ textAlign: "center", marginBottom: "24px" }}>
           <UserOutlined /> Login
         </Title>
         <Form
@@ -47,12 +59,12 @@ const Login = () => {
           initialValues={{ remember: true }}
           layout="vertical"
           onFinish={handleFinish}
-          style={{ maxWidth: 400, margin: '0 auto' }}
+          style={{ maxWidth: 400, margin: "0 auto" }}
         >
           <Form.Item
             name="nick"
             label="Nick"
-            rules={[{ required: true, message: 'Por favor, insira seu nick!' }]}
+            rules={[{ required: true, message: "Por favor, insira seu nick!" }]}
           >
             <Input prefix={<UserOutlined />} placeholder="Digite seu nick" />
           </Form.Item>
@@ -60,7 +72,9 @@ const Login = () => {
           <Form.Item
             name="patente"
             label="Patente"
-            rules={[{ required: true, message: 'Por favor, selecione sua patente!' }]}
+            rules={[
+              { required: true, message: "Por favor, selecione sua patente!" },
+            ]}
           >
             <Select placeholder="Selecione sua patente" id="patente">
               <Option value="terceiro-sargento">Terceiro Sargento</Option>
@@ -85,7 +99,12 @@ const Login = () => {
           <Form.Item
             name="supervisor"
             label="Supervisor"
-            rules={[{ required: true, message: 'Por favor, selecione se é supervisor!' }]}
+            rules={[
+              {
+                required: true,
+                message: "Por favor, selecione se é supervisor!",
+              },
+            ]}
           >
             <Radio.Group>
               <Space direction="horizontal">
@@ -98,9 +117,16 @@ const Login = () => {
           <Form.Item
             name="segundaCompanhia"
             label="Você é Oficial da 2ª Companhia?"
-            rules={[{ required: true, message: 'Por favor, selecione se é da 2ª Companhia!' }]}
+            rules={[
+              {
+                required: true,
+                message: "Por favor, selecione se é da 2ª Companhia!",
+              },
+            ]}
           >
-            <Radio.Group onChange={(e) => setIsSecondCompany(e.target.value === 'sim')}>
+            <Radio.Group
+              onChange={(e) => setIsSecondCompany(e.target.value === "sim")}
+            >
               <Space direction="horizontal">
                 <Radio value="sim">Sim</Radio>
                 <Radio value="nao">Não</Radio>
@@ -112,9 +138,14 @@ const Login = () => {
             <Form.Item
               name="senhaCompanhia"
               label="Senha da 2ª Companhia"
-              rules={[{ required: true, message: 'Por favor, insira a senha!' }]}
+              rules={[
+                { required: true, message: "Por favor, insira a senha!" },
+              ]}
             >
-              <Input.Password prefix={<LockOutlined />} placeholder="Digite a senha" />
+              <Input.Password
+                prefix={<LockOutlined />}
+                placeholder="Digite a senha"
+              />
             </Form.Item>
           )}
 
@@ -127,13 +158,22 @@ const Login = () => {
 
         <Divider />
 
-        <Title level={5} style={{ textAlign: 'center' }}>
+        <Title level={5} style={{ textAlign: "center" }}>
           <InfoCircleOutlined /> Benefícios
         </Title>
-        <ul style={{ paddingLeft: 0, listStyleType: 'none' }}>
-          <li><CheckCircleOutlined style={{ marginRight: 8 }} /> Salve suas informações de forma segura e personalizada.</li>
-          <li><EditOutlined style={{ marginRight: 8 }} /> Edite facilmente seus dados conforme necessário.</li>
-          <li><SettingOutlined style={{ marginRight: 8 }} /> Acesso rápido a ferramentas e recursos personalizados.</li>
+        <ul style={{ paddingLeft: 0, listStyleType: "none" }}>
+          <li>
+            <CheckCircleOutlined style={{ marginRight: 8 }} /> Salve suas
+            informações de forma segura e personalizada.
+          </li>
+          <li>
+            <EditOutlined style={{ marginRight: 8 }} /> Edite facilmente seus
+            dados conforme necessário.
+          </li>
+          <li>
+            <SettingOutlined style={{ marginRight: 8 }} /> Acesso rápido a
+            ferramentas e recursos personalizados.
+          </li>
         </ul>
       </Card>
     </div>

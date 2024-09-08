@@ -3,6 +3,7 @@ import { Button, Typography, Layout, Row, Col, Card, Avatar } from "antd";
 import { useNavigate } from "react-router-dom";
 import { LogoutOutlined, UserOutlined, EditOutlined } from "@ant-design/icons";
 import EditModal from "../EditModal/EditModal";
+import ContainerTreinos from "../ContainerTreinos/ContainerTreinos";
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -106,7 +107,7 @@ const PaginaTreinos = () => {
                 >
                   <div>
                     <Text strong>Supervisor:</Text>{" "}
-                    {loginData.supervisor === 'sim' ? 'Sim' : 'Não'}
+                    {loginData.supervisor === "sim" ? "Sim" : "Não"}
                   </div>
                   <Button
                     type="link"
@@ -136,6 +137,7 @@ const PaginaTreinos = () => {
               </Typography>
             </Col>
           </Row>
+            <ContainerTreinos />
         </Card>
       </Content>
 
