@@ -1,0 +1,9 @@
+.paragraph {
+  transition: all 0.3s;
+}
+
+.paragraph.copied {
+  background-color: #e6f7ff;
+  border-left: 4px solid #1890ff;
+  padding: 10px;
+}
