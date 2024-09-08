@@ -23,7 +23,6 @@ const ContainerTreinos = () => {
 
   return (
     <div style={{ padding: '20px' }}>
-      <Title level={3}>Treinos Disponíveis</Title>
       <Row gutter={[16, 16]}>
         {/* Bloco Treino Básico I */}
         <Col xs={24} sm={12} md={12} lg={6}>

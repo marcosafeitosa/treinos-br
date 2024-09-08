@@ -24,6 +24,78 @@ const paragrafoArray = [
   'Você deve se dirigir a um Oficial usando "Senhor(a)".',
   "Exemplo: Sim, senhor(a)/Não, senhor(a).",
   "Dúvidas?",
+
+  "III - Negrito. (Balão Verde)",
+  "O negrito é obrigatório nas dependências do Exército Brasileiro.",
+  "Para utilizar o negrito pelo computador,",
+  "basta segurar a tecla SHIFT e teclar ENTER após digitar a frase.",
+  'Caso o negrito falhe, corrija-o com um "*" em negrito.',
+  "Para utilizar o negrito na versão mobile, basta escrever :shout no início da frase.",
+  "Exemplo: ;shout Olá. (Altere ; por : )",
+  "Dúvidas?",
+
+  "IV - Comandos. (Balão Verde)",
+  "1. Sentido/Atenção.",
+  "Você ficará de pé diante do seu assento.",
+  "Este movimento se chama Sentido/Atenção, deve ser feito quando ouvir um apito.",
+  "Ou quando um Oficial for à portinha e solicitar o comando.",
+  "Em Sentido é proibido falar/sussurrar e ficar com drinks na mão.",
+  "Caso fique torto(a), sente-se e refaça o movimento até ficar reto(a).",
+  "Sabe soltar itens da mão?",
+  'Clique em você, aperte na seta em cima do seu boneco e em "Soltar Item".',
+  'Em caso de bug, você pode usar o comando ":drop" também.',
+  "Dúvidas?",
+
+  "2. Descansar/À vontade.",
+  "Você irá se sentar novamente no seu assento.",
+  "Este movimento se chama Descansar/À vontade.",
+  "Quando for dado esse comando, deve se sentar e retornar para suas atividades.",
+  "Ambos os comandos devem ser executados em 5 segundos.",
+  "Caso contrário, poderá ir para fora do QG. Mas poderá retornar normalmente.",
+  "Dúvidas?",
+
+  "V - Quartel-General (QG). (Balão Verde)",
+  "1. Guarda-Portão (GP).",
+  'São as "Cadeiras Majestosas" que ficam localizadas na parte da frente do QG.',
+  "Para assumir o GP, fique a um quadrado de distância atrás do posto e digite:",
+  '"Assumo, [Patente]."',
+  "Em GP é proibido se ausentar e deve sempre assumir seus superiores.",
+  "A função do GP é o alistamento.",
+  "Exemplo: Fulano, deseja se alistar?",
+  'Caso ele diga sim, utilize o comando ":liberar".',
+  "Caso ele não queira ou esteja atrapalhando, sussurre com um Oficial.",
+  "Dúvidas?",
+  "2. Preencha a Retaguarda (PAR).",
+  "O PAR são os sofás-tronos ao fundo dos GP's.",
+  "Lugar onde você irá esperar por alguma função, caso todas estejam ocupadas.",
+  "Se tiver lugar no GP ou um superior sentado, busque assumir o posto.",
+  "Dúvidas?",
+  "3. Posto de Ausência (PDA).",
+  "É o local onde você irá se ausentar, ele fica ao lado do CI.",
+  "Basta clicar em usar a “Máquina de Ticket” que você será movido(a) para ele.",
+  "Para retornar às atividades, basta clicar normalmente num piso próximo.",
+  "Vale destacar que é proibido entrar no Quartel e ir direto para o PDA.",
+  "Dúvidas?",
+
+  "4. Funcionamento do Quartel General.",
+  "O Quartel General funciona das 10h às 23h em dias da semana e",
+  "das 11h às 23h em finais de semana/feriado.",
+
+  "VI - Regras do Exército Brasileiro. (Balão Verde)",
+  "1. Nunca pedir pagamentos, promoções ou direitos.",
+  "2. Proibido participar de outro Exército/Polícia enquanto alistado do Ex.BR.",
+  "3. Não faltar com respeito com ninguém.",
+  "4. Proibido dançar, sentar no chão e apresentar placas nas dependências internas do Ex.BR.",
+  "5. Proibido manter a visibilidade do perfil e o status online desabilitados enquanto estiver nas salas pertencentes ao Ex.BR.",
+  "Dúvidas?",
+
+  "VII - Finalização. (Balão Verde)",
+  "Parabéns, você foi aprovado(a) no Treinamento Básico I.",
+  "Para encontrar o Exército Brasileiro novamente, basta procurar por Cm-Anonimo",
+  "no navegador e ir até o quarto do Exército Brasileiro com a tag FMB.",
+  "A entrada no QG deve ser feita através do “Monolito Negro” do lado de fora.",
+  "Você deve estar devidamente fardado(a), com a missão correta e,",
+  "quando estiver tudo correto, será liberado(a) por um Oficial.",
 ];
 
 const patenteMap = {
@@ -33,17 +105,6 @@ const patenteMap = {
   "Subtenente": "Subtenente",
   "Aluno da EsPCEx": "Aluno",
   "Cadete da AMAN": "Cadete",
-  "aspirante": "Aspirante",
-  "segundo-tenente": "Segundo Tenente",
-  "primeiro-tenente": "Primeiro Tenente",
-  "capitao": "Capitão",
-  "major": "Major",
-  "tenente-coronel": "Tenente Coronel",
-  "coronel": "Coronel",
-  "gdb": "General de Brigada",
-  "gdd": "General de Divisão",
-  "gde": "General de Exército",
-  "demitido": "Demitido",
 };
 
 const TreinoBasicoI = () => {
@@ -51,14 +112,13 @@ const TreinoBasicoI = () => {
   const [loginData, setLoginData] = useState(null);
   const navigate = useNavigate();
   const copyButtonRef = useRef(null);
+  const paragraphRefs = useRef([]); // Adiciona um array de referências para os parágrafos
 
-  // Função para lidar com a navegação ao clicar no ícone
   const handleBack = () => {
     navigate("/pagina-treinos");
   };
 
   useEffect(() => {
-    // Pegar dados do localStorage e definir estado
     const storedData = JSON.parse(localStorage.getItem("loginData"));
     setLoginData(storedData);
   }, []);
@@ -71,10 +131,10 @@ const TreinoBasicoI = () => {
   // Função para obter o texto do parágrafo atualizado
   const getParagraphText = (index) => {
     if (loginData) {
-      if (index === 2) { // Atualiza o parágrafo específico
+      if (index === 2) {
         return `Eu sou o ${loginData.patente} ${loginData.nick} e irei treiná-lo(a) para a sua aprovação.`;
       }
-      if (index === 4) { // Atualiza o parágrafo com "Sim, Senhor"
+      if (index === 4) {
         if (loginData.corpoDeOficiais === "sim") {
           return 'Responda às perguntas usando "Sim, Senhor", e "Não, Senhor".';
         }
@@ -88,7 +148,6 @@ const TreinoBasicoI = () => {
     return paragrafoArray[index];
   };
 
-  // Função para copiar o texto para a área de transferência
   const copyToClipboard = (index) => {
     const text = getParagraphText(index);
     const processedText = removeBalãoVerde(text);
@@ -99,14 +158,14 @@ const TreinoBasicoI = () => {
         .then(() => {
           notification.success({
             message: "Texto copiado para a área de transferência!",
-            duration: 1.5,
+            duration: 0.5,
           });
         })
         .catch((err) => {
           notification.error({
             message: "Falha ao copiar o texto.",
             description: err.toString(),
-            duration: 1.5,
+            duration: 0.5,
           });
         });
     } else if (copyButtonRef.current) {
@@ -116,7 +175,7 @@ const TreinoBasicoI = () => {
       clipboard.on("success", () => {
         notification.success({
           message: "Texto copiado para a área de transferência!",
-          duration: 1.5,
+          duration: 0.5,
         });
         clipboard.destroy();
       });
@@ -124,7 +183,7 @@ const TreinoBasicoI = () => {
         notification.error({
           message: "Falha ao copiar o texto.",
           description: err.toString(),
-          duration: 1.5,
+          duration: 0.5,
         });
         clipboard.destroy();
       });
@@ -146,6 +205,16 @@ const TreinoBasicoI = () => {
     setCurrentIndex(newIndex);
     copyToClipboard(newIndex);
   };
+
+  // Efeito para centralizar o parágrafo atual na tela
+  useEffect(() => {
+    if (paragraphRefs.current[currentIndex]) {
+      paragraphRefs.current[currentIndex].scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [currentIndex]);
 
   return (
     <Card
@@ -186,6 +255,7 @@ const TreinoBasicoI = () => {
         {paragrafoArray.map((texto, index) => (
           <p
             key={index}
+            ref={(el) => (paragraphRefs.current[index] = el)} // Adiciona a referência ao parágrafo
             style={{
               marginBottom: "10px",
               padding: "10px",
