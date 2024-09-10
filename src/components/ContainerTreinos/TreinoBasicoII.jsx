@@ -30,7 +30,7 @@ const paragrafoArray = [
   "Como o próprio nome já diz, é o local onde os oficiais ficam quando não há mais vagas em GP ou PAR.",
   "Nunca entre na ADO, ou estará sujeito a banimento do Exército Brasileiro.",
   "Dúvidas?",
-  "III - Centro de Instrução (CI).",
+  "III - Centro de Instrução (CI). (Balão Verde)",
   "O CI são os tapetes brancos e pretos à esquerda do Quartel General.",
   "Irá assumir o tapete branco quem for aplicar a instrução, e o tapete preto quem irá recebê-la.",
   "Também pode ocorrer de um oficial solicitar sua presença no CI.",
