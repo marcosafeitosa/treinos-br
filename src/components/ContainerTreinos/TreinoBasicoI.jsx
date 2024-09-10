@@ -24,6 +24,15 @@ const paragrafoArray = [
   'Você deve se dirigir a um Oficial usando "Senhor(a)".',
   "Exemplo: Sim, senhor(a)/Não, senhor(a).",
   "Dúvidas?",
+  
+  
+  "II - Pagamentos. (Balão Verde)",
+  "Após aprovado(a) neste treinamento, você será um Soldado do Exército Brasileiro, 
+  sendo assim, possuirá direito a pagamentos.",
+  "Estes ocorrem 4x ao dia, horários: 12h, 15h, 18h e 21h.",
+  "Soldados ganham 4 mobis, Soldado Estrela 5 mobis e Cabos 6 mobis.",
+  "Dúvidas?",
+  
 
   "III - Negrito. (Balão Verde)",
   "O negrito é obrigatório nas dependências do Exército Brasileiro.",
