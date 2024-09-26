@@ -109,7 +109,7 @@ const paragrafoArray = [
   "Adicionar missão - Não copie. (Balão Verde)",
   "Para adicionar a patente na missão jogando no celular, faça o que eu pedir nas próximas mensagens:",
   "Pressione o dedo em seu avatar, clique no seu nome/nick na lista que apareceu.",
-  "Você viu que apareceu a imagem de seu avatar no canto direito da tela e acima da imagem seu nome também.",
+  "Você viu que apareceu a imagem de seu avatar no canto direito da tela e acima da imagem seu nome/nick também.",
   "Entre o nome e a imagem tem um espaço vazio na cor azul, clique nesse espaço e abrirá um campo de texto.",
   "Abrindo o campo de texto digite na sua missão o seguinte:",
   "[Ex.BR] Soldado",
