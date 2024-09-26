@@ -106,7 +106,13 @@ const paragrafoArray = [
   "Você deve estar devidamente fardado(a), com a missão correta e,",
   "quando estiver tudo correto, será liberado(a) por um Oficial.",
   
-  "Alterações p/ o Treinado - Não copie (Balão Verde)",
+  "Adicionar missão - Não copie. (Balão Verde)",
+  "Por favor, preste atenção que irei lhe ajudar nas alterações.",
+  "Pressione o dedo em seu avatar, clique no seu nome/nick na lista que apareceu.",
+  "Você viu que apareceu a imagem de seu avatar no canto direito da tela e acima da imagem seu nome também.",
+  "Entre o nome e a imagem tem um espaço vazio na cor azul, clique nesse espaço e abrirá um campo de texto.",
+  "Abrindo o campo de texto digite na sua missão o seguinte:",
+  "[Ex.BR] Soldado",
   
 ];
 
