@@ -105,6 +105,9 @@ const paragrafoArray = [
   "A entrada no QG deve ser feita através do “Monolito Negro” do lado de fora.",
   "Você deve estar devidamente fardado(a), com a missão correta e,",
   "quando estiver tudo correto, será liberado(a) por um Oficial.",
+  
+  "Alterações p/ o Treinado - Não copie (Balão Verde)",
+  
 ];
 
 const patenteMap = {
