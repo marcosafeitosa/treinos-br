@@ -144,6 +144,13 @@ const TreinoBasicoI = () => {
   };
 
   useEffect(() => {
+    const loginData = localStorage.getItem("loginData");
+    if (loginData) {
+      navigate("/treino-basico-i");
+    }
+  }, [navigate]);
+
+  useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem("loginData"));
     setLoginData(storedData);
   }, []);
