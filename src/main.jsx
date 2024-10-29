@@ -9,6 +9,7 @@ import TreinoBasicoII from "./components/ContainerTreinos/TreinoBasicoII.jsx";
 import TreinoCompI from "./components/ContainerTreinos/TreinoCompI.jsx";
 import TreinoCompII from "./components/ContainerTreinos/TreinoCompII.jsx";
 import ModuloOrtografico from "./components/ContainerTreinos/ModuloOrtografico.jsx";
+import NotFound from "./components/NotFound/NotFound.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -22,6 +23,7 @@ root.render(
       <Route path="/treino-comp-i" element={<TreinoCompI />} />
       <Route path="/treino-comp-ii" element={<TreinoCompII />} />
       <Route path="/modulo-ortografico" element={<ModuloOrtografico />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   </Router>
 );
