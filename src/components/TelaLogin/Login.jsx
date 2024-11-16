@@ -200,11 +200,8 @@ const Login = () => {
             dados conforme necessário.
           </li>
           <li>
-            <SettingOutlined style={{ marginRight: 8 }} /> Acesso rápido a
-            ferramentas e recursos personalizados.
-          </li>
-          <li>
-           - Desenvolvido por Therus.
+            <SettingOutlined style={{ marginRight: 8 }} /> 
+              - Desenvolvido por Therus.
           </li>
         </ul>
       </Card>
