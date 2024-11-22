@@ -11,7 +11,8 @@ import Clipboard from "clipboard";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-"I - INTRODUÇÃO (Balão Verde)"
+"I - Introdução. (Balão Verde)",
+"Seja bem-vindo à palestra de Módulo Ortográfico. Veremos, a seguir, algumas regras para o aprimoramento da sua ortografia.",
 ];
 
 const patenteMap = {
