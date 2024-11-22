@@ -6,7 +6,6 @@ import {
   ArrowRightOutlined,
 } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
-import Clipboard from "clipboard";
 
 const { Title, Text } = Typography;
 
@@ -21,77 +20,39 @@ const paragrafoArray = [
   "Dúvidas?",
 ];
 
-const patenteMap = {
-  "Terceiro Sargento": "Sargento",
-  "Segundo Sargento": "Sargento",
-  "Primeiro Sargento": "Sargento",
-  "Subtenente": "Subtenente",
-  "Aluno da EsPCEx": "Aluno",
-  "Cadete da AMAN": "Cadete",
-};
-
 const ModuloOrtografico = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loginData, setLoginData] = useState(null);
   const navigate = useNavigate();
-  const copyButtonRef = useRef(null);
-  const paragraphRefs = useRef([]); // Adiciona um array de referências para os parágrafos
-
-  const handleBack = () => {
-    navigate("/pagina-treinos");
-  };
+  const paragraphRefs = useRef([]);
 
   useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem("loginData"));
     setLoginData(storedData);
   }, []);
 
-  // Função para remover "(Balão Verde)" do texto
   const removeBalãoVerde = (text) => {
     return text.replace(/\(Balão Verde\)$/, "").trim();
   };
 
   const copyToClipboard = (index) => {
-    const text = paragrafoArray[index];
-    const processedText = removeBalãoVerde(text);
+    const text = removeBalãoVerde(paragrafoArray[index]);
 
-    if (navigator.clipboard) {
-      navigator.clipboard
-        .writeText(processedText)
-        .then(() => {
-          notification.success({
-            message: "Texto copiado para a área de transferência!",
-            duration: 0.5,
-          });
-        })
-        .catch((err) => {
-          notification.error({
-            message: "Falha ao copiar o texto.",
-            description: err.toString(),
-            duration: 0.5,
-          });
-        });
-    } else if (copyButtonRef.current) {
-      const clipboard = new Clipboard(copyButtonRef.current, {
-        text: () => processedText,
-      });
-      clipboard.on("success", () => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
         notification.success({
           message: "Texto copiado para a área de transferência!",
           duration: 0.5,
         });
-        clipboard.destroy();
-      });
-      clipboard.on("error", (err) => {
+      })
+      .catch((err) => {
         notification.error({
           message: "Falha ao copiar o texto.",
           description: err.toString(),
           duration: 0.5,
         });
-        clipboard.destroy();
       });
-      copyButtonRef.current.click();
-    }
   };
 
   const handlePrevious = () => {
@@ -109,7 +70,6 @@ const ModuloOrtografico = () => {
     copyToClipboard(newIndex);
   };
 
-  // Efeito para centralizar o parágrafo atual na tela
   useEffect(() => {
     if (paragraphRefs.current[currentIndex]) {
       paragraphRefs.current[currentIndex].scrollIntoView({
@@ -130,7 +90,7 @@ const ModuloOrtografico = () => {
       }}
     >
       <LeftOutlined
-        onClick={handleBack}
+        onClick={() => navigate("/pagina-treinos")}
         style={{
           fontSize: "20px",
           position: "absolute",
@@ -158,7 +118,7 @@ const ModuloOrtografico = () => {
         {paragrafoArray.map((texto, index) => (
           <p
             key={index}
-            ref={(el) => (paragraphRefs.current[index] = el)} // Adiciona a referência ao parágrafo
+            ref={(el) => (paragraphRefs.current[index] = el)}
             style={{
               marginBottom: "10px",
               padding: "10px",
@@ -192,7 +152,6 @@ const ModuloOrtografico = () => {
         <Button icon={<ArrowRightOutlined />} onClick={handleNext}>
           Próximo
         </Button>
-        <button ref={copyButtonRef} style={{ display: "none" }}></button>
       </div>
     </Card>
   );
