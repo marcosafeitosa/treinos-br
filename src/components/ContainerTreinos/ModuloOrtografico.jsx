@@ -11,15 +11,14 @@ import Clipboard from "clipboard";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-"I - Introdução. (Balão Verde)",
-"Seja bem-vindo à palestra de Módulo Ortográfico. Veremos, a seguir, algumas regras para o aprimoramento da sua ortografia.",
-"Ter uma boa escrita é essencial para TODOS os membros do Exército Brasileiro.",
-"A digitação correta está relacionada diretamente à comunicação entre os membros de nossa instituição.",
-"Quanto melhor a nossa escrita, melhor será o entendimento daquilo que está sendo passado, assim, evitando qualquer equívoco.",
-"Ter uma boa escrita também é um fator muito observado pelos Oficiais. Sendo boa, causa uma impressão positiva; sendo ruim, causa uma impressão negativa.",
-"Por esses e outros motivos é muito importante sempre buscarmos a melhor ortografia possível.",
-"Dúvidas?",
-
+  "I - Introdução. (Balão Verde)",
+  "Seja bem-vindo à palestra de Módulo Ortográfico. Veremos, a seguir, algumas regras para o aprimoramento da sua ortografia.",
+  "Ter uma boa escrita é essencial para TODOS os membros do Exército Brasileiro.",
+  "A digitação correta está relacionada diretamente à comunicação entre os membros de nossa instituição.",
+  "Quanto melhor a nossa escrita, melhor será o entendimento daquilo que está sendo passado, assim, evitando qualquer equívoco.",
+  "Ter uma boa escrita também é um fator muito observado pelos Oficiais. Sendo boa, causa uma impressão positiva; sendo ruim, causa uma impressão negativa.",
+  "Por esses e outros motivos é muito importante sempre buscarmos a melhor ortografia possível.",
+  "Dúvidas?",
 ];
 
 const patenteMap = {
@@ -52,27 +51,8 @@ const ModuloOrtografico = () => {
     return text.replace(/\(Balão Verde\)$/, "").trim();
   };
 
-  // Função para obter o texto do parágrafo atualizado
-  // const getParagraphText = (index) => {
-  //   if (loginData) {
-  //     if (index === 2) {
-  //       return `Eu sou o ${loginData.patente} ${loginData.nick} e irei treiná-lo(a) para a sua aprovação.`;
-  //     }
-  //     if (index === 4) {
-  //       if (loginData.corpoDeOficiais === "sim") {
-  //         return 'Responda às perguntas usando "Sim, Senhor", e "Não, Senhor".';
-  //       }
-  //       if (loginData.corpoDePracas === "sim") {
-  //         const patente = loginData.patente;
-  //         const tratamento = patenteMap[patente] || "Senhor";
-  //         return `Responda às perguntas usando "Sim, ${tratamento}", e "Não, ${tratamento}".`;
-  //       }
-  //     }
-  //   }
-  //   return paragrafoArray[index];
-  // };
-
   const copyToClipboard = (index) => {
+    const text = paragrafoArray[index];
     const processedText = removeBalãoVerde(text);
 
     if (navigator.clipboard) {
@@ -191,6 +171,7 @@ const ModuloOrtografico = () => {
               borderRadius: "4px",
             }}
           >
+            {texto}
           </p>
         ))}
       </div>
