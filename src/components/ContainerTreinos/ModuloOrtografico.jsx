@@ -162,9 +162,9 @@ const ModuloOrtografico = () => {
         }}
       />
 
-      <Title level={2}>T3</Title>
+      <Title level={2}>MO</Title>
       <Text type="secondary" style={{ fontSize: "12px" }}>
-        Treinamento Complementar I
+        Módulo Ortográfico
       </Text>
 
       <div
