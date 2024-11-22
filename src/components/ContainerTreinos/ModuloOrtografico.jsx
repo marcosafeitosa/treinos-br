@@ -13,6 +13,13 @@ const { Title, Text } = Typography;
 const paragrafoArray = [
 "I - Introdução. (Balão Verde)",
 "Seja bem-vindo à palestra de Módulo Ortográfico. Veremos, a seguir, algumas regras para o aprimoramento da sua ortografia.",
+"Ter uma boa escrita é essencial para TODOS os membros do Exército Brasileiro.",
+"A digitação correta está relacionada diretamente à comunicação entre os membros de nossa instituição.",
+"Quanto melhor a nossa escrita, melhor será o entendimento daquilo que está sendo passado, assim, evitando qualquer equívoco.",
+"Ter uma boa escrita também é um fator muito observado pelos Oficiais. Sendo boa, causa uma impressão positiva; sendo ruim, causa uma impressão negativa.",
+"Por esses e outros motivos é muito importante sempre buscarmos a melhor ortografia possível.",
+"Dúvidas?",
+
 ];
 
 const patenteMap = {
