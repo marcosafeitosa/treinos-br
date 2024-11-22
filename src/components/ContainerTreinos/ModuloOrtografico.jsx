@@ -73,7 +73,6 @@ const ModuloOrtografico = () => {
   // };
 
   const copyToClipboard = (index) => {
-    const text = getParagraphText(index);
     const processedText = removeBalãoVerde(text);
 
     if (navigator.clipboard) {
@@ -192,7 +191,6 @@ const ModuloOrtografico = () => {
               borderRadius: "4px",
             }}
           >
-            {getParagraphText(index)}
           </p>
         ))}
       </div>
