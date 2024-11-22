@@ -53,24 +53,24 @@ const ModuloOrtografico = () => {
   };
 
   // Função para obter o texto do parágrafo atualizado
-  const getParagraphText = (index) => {
-    if (loginData) {
-      if (index === 2) {
-        return `Eu sou o ${loginData.patente} ${loginData.nick} e irei treiná-lo(a) para a sua aprovação.`;
-      }
-      if (index === 4) {
-        if (loginData.corpoDeOficiais === "sim") {
-          return 'Responda às perguntas usando "Sim, Senhor", e "Não, Senhor".';
-        }
-        if (loginData.corpoDePracas === "sim") {
-          const patente = loginData.patente;
-          const tratamento = patenteMap[patente] || "Senhor";
-          return `Responda às perguntas usando "Sim, ${tratamento}", e "Não, ${tratamento}".`;
-        }
-      }
-    }
-    return paragrafoArray[index];
-  };
+  // const getParagraphText = (index) => {
+  //   if (loginData) {
+  //     if (index === 2) {
+  //       return `Eu sou o ${loginData.patente} ${loginData.nick} e irei treiná-lo(a) para a sua aprovação.`;
+  //     }
+  //     if (index === 4) {
+  //       if (loginData.corpoDeOficiais === "sim") {
+  //         return 'Responda às perguntas usando "Sim, Senhor", e "Não, Senhor".';
+  //       }
+  //       if (loginData.corpoDePracas === "sim") {
+  //         const patente = loginData.patente;
+  //         const tratamento = patenteMap[patente] || "Senhor";
+  //         return `Responda às perguntas usando "Sim, ${tratamento}", e "Não, ${tratamento}".`;
+  //       }
+  //     }
+  //   }
+  //   return paragrafoArray[index];
+  // };
 
   const copyToClipboard = (index) => {
     const text = getParagraphText(index);
