@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-  "I - Introdução. (Balão Verde)",
+  "I - INTRODUÇÃO (Balão Verde)",
   "Seja bem-vindo à palestra de Módulo Ortográfico. Veremos, a seguir, algumas regras para o aprimoramento da sua ortografia.",
   "Ter uma boa escrita é essencial para TODOS os membros do Exército Brasileiro.",
   "A digitação correta está relacionada diretamente à comunicação entre os membros de nossa instituição.",
@@ -19,7 +19,7 @@ const paragrafoArray = [
   "Por esses e outros motivos é muito importante sempre buscarmos a melhor ortografia possível.",
   "Dúvidas?",
   
-  "II - Uso da Vírgula (Balão Verde)",
+  "II - USO DA VÍRGULA (Balão Verde)",
   "A vírgula é um sinal de pontuação que marca uma pequena pausa no texto e separa elementos de uma oração ou orações entre si dentro da mesma frase.",
   "Devido a importância de seu uso no dia a dia, serão explicadas as principais regras:",
   "Na separação de elementos, isto é, termos coordenados (enumeração, lista, etc).",
@@ -28,7 +28,7 @@ const paragrafoArray = [
   'Exemplos: "Ana, não faça isso, por favor."; "Sim, senhora.".',
   "Dúvidas?",
 
-  "III - Mas e mais (Balão Verde)",
+  "III - MAS E MAIS (Balão Verde)",
   '"Mas" é uma conjunção adversativa, sendo assim, apresenta uma relação de oposição entre duas ideias.',
   'Equivale a "porém", "contudo", "entretanto", "no entanto".',
   "Por exemplo: Ela sempre se dedicou ao trabalho, mas estava exausta naquele dia.",
@@ -37,6 +37,30 @@ const paragrafoArray = [
   "Relacionado à quantidade, ao aumento, à grandeza e à comparação ou superioridade.",
   'Exemplos: "Esse sofá é mais caro que aquele."',
   "Dúvidas?",
+
+  "IV - DICAS (Balão Verde)",
+
+  "Aqui vão algumas dicas que vão ajudar a ter uma boa ortografia no QG:",
+
+  "1. Evite usar abreviações.",
+
+  "2. Sempre use letra maiúscula no começo da frase e ponto final ao terminá-la.",
+
+  "3. Nunca esqueça de utilizar o negrito, exceto se estiver na versão Beta.",
+
+  "4. Antes de entrar no QG, confira se seu balão de fala está na cor branca.",
+
+  '5. Caso tenha dúvidas sobre como escrever algo, pergunte a um amigo ou pesquise no Google para ter mais certeza.",
+
+  "6. Se quiser evitar repetir uma mesma palavra, pesquise por sinônimos dela.",
+
+  "Isso ajuda você a deixar seu vocabulário mais rico e sua escrita mais bonita.",
+
+  "Dúvidas?",
+
+  "Agora, responda a pergunta:",
+
+  "Qual a importância de uma boa escrita no Exército Brasileiro?",
 
 
 ];
