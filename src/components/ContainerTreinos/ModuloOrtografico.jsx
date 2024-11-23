@@ -33,7 +33,7 @@ const paragrafoArray = [
   'Equivale a "porém", "contudo", "entretanto", "no entanto".',
   "Por exemplo: Ela sempre se dedicou ao trabalho, mas estava exausta naquele dia.",
   '"Mais" é um pronome ou advérbio de intensidade.',
-  'Possui como antônimo a palavra "menos".",
+  'Possui como antônimo a palavra "menos"."',
   "Relacionado à quantidade, ao aumento, à grandeza e à comparação ou superioridade.",
   'Exemplos: "Esse sofá é mais caro que aquele."',
   "Dúvidas?",
@@ -50,7 +50,7 @@ const paragrafoArray = [
 
   "4. Antes de entrar no QG, confira se seu balão de fala está na cor branca.",
 
-  '5. Caso tenha dúvidas sobre como escrever algo, pergunte a um amigo ou pesquise no Google para ter mais certeza.",
+  "5. Caso tenha dúvidas sobre como escrever algo, pergunte a um amigo ou pesquise no Google para ter mais certeza.",
 
   "6. Se quiser evitar repetir uma mesma palavra, pesquise por sinônimos dela.",
 
