@@ -10,22 +10,25 @@ import { useNavigate } from "react-router-dom";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-  "I — INTRODUÇÃO (Balão Verde)",
-  "O Programa de Informação aos Praças (PIP) foi criado com a função de ajudar os Praças informando algumas dicas de como se portar dentro do Quartel General, como realizar um RE e te alertar sobre suas responsabilidades.",
+  "I - INTRODUÇÃO (Balão Verde)",
+  "O Programa de Informação aos Praças (PIP) foi criado com a função de ajudar os Praças informando algumas dicas",
+  "de como se portar dentro do Quartel General, como realizar um RE e te alertar sobre suas responsabilidades.",
   "Afinal, queremos que você usufrua da sua estadia no Exército da melhor forma possível,",
   "conseguindo realizar suas funções e tendo mais chances de êxito em suas metas e consequentemente se desenvolver aqui conosco.",
 
-  "II — COMPORTAMENTO NO QUARTEL GENERAL (Balão Verde)",
+  "II - COMPORTAMENTO NO QUARTEL GENERAL (Balão Verde)",
   "No Exército Brasileiro prezamos a empatia e o respeito mútuo. Você, como Praça, deve sempre ser respeitoso, receptivo e paciente com todos.",
-  "Sabe-se que muitos dos novos integrantes do Exército conhecem pouco sobre o jogo e, por isso, podem ter mais dificuldades na adaptação do que os mais experientes.",
-  "Tendo isso em mente, todos devemos nos esforçar para termos o máximo de tolerância, de paciência e de altruísmo para com aqueles que estiverem precisando de alguma ajuda.",
+  "Sabe-se que muitos dos novos integrantes do Exército conhecem pouco sobre o jogo e, por isso, podem ter mais",
+  "dificuldades na adaptação do que os mais experientes.",
+  "Tendo isso em mente, todos devemos nos esforçar para termos o máximo de tolerância, de paciência e de altruísmo",
+  "para com aqueles que estiverem precisando de alguma ajuda.",
   "Entendemos que um bom tratamento é crucial para o bem-estar de todos no dia a dia da Instituição e que,",
   "quanto mais pudermos propagar isso, maiores são as chances de sucesso nas atividades diárias.",
   "Da mesma forma, quando você estiver realizando alguma função, tente se concentrar ao máximo para realizá-la da melhor maneira possível,",
   "pois isso demonstra muito sobre a sua postura perante as responsabilidades do Exército Brasileiro.",
   "Dúvidas?",
 
-  "III — RECRUTAMENTO EXTERNO (Balão Verde)",
+  "III - RECRUTAMENTO EXTERNO (Balão Verde)",
 
   "Recrutamento é uma função que você em sua atual patente já pode exercer.",
   "O RE é uma das várias maneiras da instituição conseguir novos membros.",
@@ -42,7 +45,7 @@ const paragrafoArray = [
   "Seria muito importante pra mim e me ajudaria bastante! Lá eles pagam os iniciantes 4 vezes por dia e é um ótimo local para fazer bons amigos!”",
   "Dúvidas?",
 
-  "IV — RESPONSABILIDADES (Balão Verde)",
+  "IV - RESPONSABILIDADES (Balão Verde)",
 
   "Quando você se alista e é aprovado no treinamento, já recebe novas responsabilidades.",
   "É muito importante que você retire todas as dúvidas para que possa realizar suas funções da melhor maneira possível.",
@@ -52,9 +55,9 @@ const paragrafoArray = [
   "Para que nosso trabalho fique mais empolgante e dinâmico, prezamos a comunicação.",
 
   "Por isso possuímos os seguintes meios:",
-  "1 — Servidor no Dyscord",
-  "2 — Grupo no @whatsahpp",
-  "3 — E o que mais utilizamos, o Team Speak.",
+  "1 - Servidor no Dyscord",
+  "2 - Grupo no @whatsahpp",
+  "3 - E o que mais utilizamos, o Team Speak.",
 
   "Incentivamos, desde cedo, que busquem fazer parte desses meios. Caso queira, procure um ajudante ou um Oficial.",
   "Ajudantes usam medalha azul na farda e os Oficiais são de camisa branca!",
@@ -180,17 +183,35 @@ const ProgramacaoInstrucaoPracas = () => {
       <div
         style={{
           position: "fixed",
-          bottom: 20,
+          bottom: 30,
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
-          gap: "20px",
+          gap: "35px",
         }}
       >
-        <Button icon={<ArrowLeftOutlined />} onClick={handlePrevious}>
+        <Button
+          icon={<ArrowLeftOutlined />}
+          onClick={handlePrevious}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Anterior
         </Button>
-        <Button icon={<ArrowRightOutlined />} onClick={handleNext}>
+        <Button
+          icon={<ArrowRightOutlined />}
+          onClick={handleNext}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Próximo
         </Button>
       </div>
