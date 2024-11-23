@@ -11,45 +11,57 @@ const { Title, Text } = Typography;
 
 const paragrafoArray = [
   "I — INTRODUÇÃO (Balão Verde)",
-  "Programa de Instrução ao Soldado - PIS",
-  "Eu faço parte do Grupo de Supervisores e serei o responsável em lhe aplicar essa Palestra hoje.",
-  "Nessa palestra entraremos em alguns pontos superficiais a fim de instruir os novos membros, sanando todas as dúvidas possíveis sobre nossa instituição.",
+  "O Programa de Informação aos Praças (PIP) foi criado com a função de ajudar os Praças informando algumas dicas de como se portar dentro do Quartel General, como realizar um RE e te alertar sobre suas responsabilidades.",
+  "Afinal, queremos que você usufrua da sua estadia no Exército da melhor forma possível,",
+  "conseguindo realizar suas funções e tendo mais chances de êxito em suas metas e consequentemente se desenvolver aqui conosco.",
 
-  "II — EXÉRCITO BRASILEIRO (Balão Verde)",
-  "O Exército Brasileiro do Marechal Cm-Anonimo criado em 2021 tem o intuito de trazer ao jogador sensação de estar realmente participando de um Exército na vida real.",
-  "Ou seja, trazemos treinamentos, grupos externos e muitas outras coisas que irá encontrar em sua caminhada aqui conosco.",
-
-  "III — LOCAIS DO QUARTEL GENERAL (Balão Verde)",
-
-  "1. Guarda-Portão (GP).",
-  "São as “Cadeiras Majestosas” que ficam localizadas na parte de frente do Quartel General.",
-  "Sua principal função no QG como Soldado em GP é realizar o alistamento dos civis que irão comparecer no GP.",
-  "Assim que o civil sentar, deverá perguntar se o mesmo deseja se alistar.",
-  "Exemplo: Fulano, deseja se alistar?",
-  'Caso ele diga sim, utilize o comando ":liberar". Caso ele não queira ou esteja atrapalhando, sussurre com um Oficial.',
+  "II — COMPORTAMENTO NO QUARTEL GENERAL (Balão Verde)",
+  "No Exército Brasileiro prezamos a empatia e o respeito mútuo. Você, como Praça, deve sempre ser respeitoso, receptivo e paciente com todos.",
+  "Sabe-se que muitos dos novos integrantes do Exército conhecem pouco sobre o jogo e, por isso, podem ter mais dificuldades na adaptação do que os mais experientes.",
+  "Tendo isso em mente, todos devemos nos esforçar para termos o máximo de tolerância, de paciência e de altruísmo para com aqueles que estiverem precisando de alguma ajuda.",
+  "Entendemos que um bom tratamento é crucial para o bem-estar de todos no dia a dia da Instituição e que,",
+  "quanto mais pudermos propagar isso, maiores são as chances de sucesso nas atividades diárias.",
+  "Da mesma forma, quando você estiver realizando alguma função, tente se concentrar ao máximo para realizá-la da melhor maneira possível,",
+  "pois isso demonstra muito sobre a sua postura perante as responsabilidades do Exército Brasileiro.",
   "Dúvidas?",
 
-  "2. Centro de Instrução (CI).",
-  "O Centro de Instrução (CI) é o local utilizado para a realização de promoções, auxílios e treinamentos quando não enviados nas devidas salas.",
-  "O CI são os tapetes brancos e pretos localizados na parte esquerda do Quartel General.",
-  "Tapetinho branco para quem está instruindo/promovendo;",
-  "Tapetinho preto para quem está recebendo a instrução/promoção.",
-  "Você em seu atual posto de Soldado, só poderá ir até o CI quando solicitado por algum Praça/Oficial capacitado para lhe instruir no mesmo.",
-  ". As instruções do CI são aplicadas individualmente, portanto, será passada para você via sussurro.",
+  "III — RECRUTAMENTO EXTERNO (Balão Verde)",
+
+  "Recrutamento é uma função que você em sua atual patente já pode exercer.",
+  "O RE é uma das várias maneiras da instituição conseguir novos membros.",
+  "Daremos algumas instruções de como realizar um Recrutamento Externo efetivo:",
+
+  "Coloque um visual diferenciado, que vá chamar atenção do abordado.",
+  "Utilize balões de fala coloridos e chamativos.",
+
+  "Use a criatividade para convencer o civil a te seguir e se alistar no Exército Brasileiro. Aqui vão algumas dicas de abordagem:",
+
+  "“Olá, tudo bem?”",
+  "“Você poderia me ajudar com uma missão aqui no jogo?”",
+  "“Preciso levar pessoas ao local onde trabalho aqui no jogo. Você poderia ir lá comigo para conhecer, por favor?",
+  "Seria muito importante pra mim e me ajudaria bastante! Lá eles pagam os iniciantes 4 vezes por dia e é um ótimo local para fazer bons amigos!”",
   "Dúvidas?",
 
-  "IV — ATIVAÇÃO DAS TROCAS (Balão Verde)",
-  "Você como Soldado do Exército possui direito ao pagamento que é realizado 4 vezes por dia.",
-  "Caso suas trocas ainda não estejam ativadas, você precisa ativá-las para poder negociar e assim receber seus pagamentos.",
-  "Como saber o que preciso fazer para ativar as minhas trocas?",
-  "Simples: você precisa procurar pelas Conquistas do seu usuário no jogo e realizar todas as ações das abas de “Tutorial” e “Trocas Ativadas”.",
-  "Algumas levam alguns dias e tempo no hotel, mas várias podem ser concluídas rapidamente.",
-  'Há vários vídeos de como liberar as trocas, basta procurar no Youtube por: "COMO LIBERAR AS TROCAS NO HABBO"',
-  "para ter mais detalhes e informações sobre o assunto. Lembre-se que somente com elas ativadas poderá receber seu pagamento diário.",
+  "IV — RESPONSABILIDADES (Balão Verde)",
+
+  "Quando você se alista e é aprovado no treinamento, já recebe novas responsabilidades.",
+  "É muito importante que você retire todas as dúvidas para que possa realizar suas funções da melhor maneira possível.",
+  "Então, quando tiver alguma dúvida, não fique com receio de perguntar.",
+  "Não é necessário ficar da abertura até o fechamento do Quartel General, porém, quanto mais agregar à instituição,",
+  "mais terá chances de crescer aqui dentro.",
+  "Para que nosso trabalho fique mais empolgante e dinâmico, prezamos a comunicação.",
+
+  "Por isso possuímos os seguintes meios:",
+  "1 — Servidor no Dyscord",
+  "2 — Grupo no @whatsahpp",
+  "3 — E o que mais utilizamos, o Team Speak.",
+
+  "Incentivamos, desde cedo, que busquem fazer parte desses meios. Caso queira, procure um ajudante ou um Oficial.",
+  "Ajudantes usam medalha azul na farda e os Oficiais são de camisa branca!",
   "Dúvidas?",
 ];
 
-const ProgramacaoInstrucaoSoldado = () => {
+const ProgramacaoInstrucaoPracas = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loginData, setLoginData] = useState(null);
   const navigate = useNavigate();
@@ -130,9 +142,9 @@ const ProgramacaoInstrucaoSoldado = () => {
         }}
       />
 
-      <Title level={2}>PIS</Title>
+      <Title level={2}>PIP</Title>
       <Text type="secondary" style={{ fontSize: "12px" }}>
-        Programa de Instrução ao Soldado
+        Programa de Instrução aos Praças
       </Text>
 
       <div
@@ -186,4 +198,4 @@ const ProgramacaoInstrucaoSoldado = () => {
   );
 };
 
-export default ProgramacaoInstrucaoSoldado;
+export default ProgramacaoInstrucaoPracas;
