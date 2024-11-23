@@ -18,6 +18,27 @@ const paragrafoArray = [
   "Ter uma boa escrita também é um fator muito observado pelos Oficiais. Sendo boa, causa uma impressão positiva; sendo ruim, causa uma impressão negativa.",
   "Por esses e outros motivos é muito importante sempre buscarmos a melhor ortografia possível.",
   "Dúvidas?",
+  
+  "II - Uso da Vírgula (Balão Verde)",
+  "A vírgula é um sinal de pontuação que marca uma pequena pausa no texto e separa elementos de uma oração ou orações entre si dentro da mesma frase.",
+  "Devido a importância de seu uso no dia a dia, serão explicadas as principais regras:",
+  "Na separação de elementos, isto é, termos coordenados (enumeração, lista, etc).",
+  "Por exemplo: Comprei ovos, legumes e verduras.",
+  "Para isolar o vocativo/pronomes, ou seja, ao chamar alguém na frase.",
+  'Exemplos: "Ana, não faça isso, por favor."; "Sim, senhora.".',
+  "Dúvidas?",
+
+  "III - Mas e mais (Balão Verde)",
+  '"Mas" é uma conjunção adversativa, sendo assim, apresenta uma relação de oposição entre duas ideias.',
+  'Equivale a "porém", "contudo", "entretanto", "no entanto".',
+  "Por exemplo: Ela sempre se dedicou ao trabalho, mas estava exausta naquele dia.",
+  '"Mais" é um pronome ou advérbio de intensidade.',
+  'Possui como antônimo a palavra "menos".",
+  "Relacionado à quantidade, ao aumento, à grandeza e à comparação ou superioridade.",
+  'Exemplos: "Esse sofá é mais caro que aquele."',
+  "Dúvidas?",
+
+
 ];
 
 const ModuloOrtografico = () => {
