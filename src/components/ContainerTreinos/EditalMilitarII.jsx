@@ -10,46 +10,42 @@ import { useNavigate } from "react-router-dom";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-  "I — INTRODUÇÃO (Balão Verde)",
-  "Programa de Instrução ao Soldado - PIS",
-  "Eu faço parte do Grupo de Supervisores e serei o responsável em lhe aplicar essa Palestra hoje.",
-  "Nessa palestra entraremos em alguns pontos superficiais a fim de instruir os novos membros, sanando todas as dúvidas possíveis sobre nossa instituição.",
+  "I - INTRODUÇÃO (Balão Verde)",
 
-  "II — EXÉRCITO BRASILEIRO (Balão Verde)",
-  "O Exército Brasileiro do Marechal Cm-Anonimo criado em 2021 tem o intuito de trazer ao jogador sensação de estar realmente participando de um Exército na vida real.",
-  "Ou seja, trazemos treinamentos, grupos externos e muitas outras coisas que irá encontrar em sua caminhada aqui conosco.",
-
-  "III — LOCAIS DO QUARTEL GENERAL (Balão Verde)",
-
-  "1. Guarda-Portão (GP).",
-  "São as “Cadeiras Majestosas” que ficam localizadas na parte de frente do Quartel General.",
-  "Sua principal função no QG como Soldado em GP é realizar o alistamento dos civis que irão comparecer no GP.",
-  "Assim que o civil sentar, deverá perguntar se o mesmo deseja se alistar.",
-  "Exemplo: Fulano, deseja se alistar?",
-  'Caso ele diga sim, utilize o comando ":liberar". Caso ele não queira ou esteja atrapalhando, sussurre com um Oficial.',
+  "Edital Militar II:",
+  "As academias são períodos dedicados à formação de Sargentos e de Oficiais do Exército Brasileiro.",
+  "A EsSA (Escola de Sargentos das Armas) é responsável pela inserção de novos Sargentos no Corpo de Praças, os nossos treinadores.",
+  "Enquanto que a EsPCEx (Escola Preparatória de Cadetes do Exército) e a AMAN (Academia Militar das Agulhas Negras)",
+  "são incumbidas de graduar novos Oficiais, mediante convocação e aprovação.",
   "Dúvidas?",
 
-  "2. Centro de Instrução (CI).",
-  "O Centro de Instrução (CI) é o local utilizado para a realização de promoções, auxílios e treinamentos quando não enviados nas devidas salas.",
-  "O CI são os tapetes brancos e pretos localizados na parte esquerda do Quartel General.",
-  "Tapetinho branco para quem está instruindo/promovendo;",
-  "Tapetinho preto para quem está recebendo a instrução/promoção.",
-  "Você em seu atual posto de Soldado, só poderá ir até o CI quando solicitado por algum Praça/Oficial capacitado para lhe instruir no mesmo.",
-  ". As instruções do CI são aplicadas individualmente, portanto, será passada para você via sussurro.",
+  "II - EsSA - ESCOLA DE SARGENTOS DAS ARMAS (Balão Verde)",
+
+  "A Escola de Sargentos das Armas é um período dedicado à formação de um 3° Sargento.",
+  "Para a obtenção de experiência, o aluno recebe treinamentos preparatórios e auxilia treinamentos antes",
+  "de assumir seu posto como treinador.",
+  "A academia proporciona, bem como, a realização de uma prova externa a qual possibilita a entrada de pessoas na instituição",
+  "a partir de uma patente mais elevada, poupando o seu alistamento.",
   "Dúvidas?",
 
-  "IV — ATIVAÇÃO DAS TROCAS (Balão Verde)",
-  "Você como Soldado do Exército possui direito ao pagamento que é realizado 4 vezes por dia.",
-  "Caso suas trocas ainda não estejam ativadas, você precisa ativá-las para poder negociar e assim receber seus pagamentos.",
-  "Como saber o que preciso fazer para ativar as minhas trocas?",
-  "Simples: você precisa procurar pelas Conquistas do seu usuário no jogo e realizar todas as ações das abas de “Tutorial” e “Trocas Ativadas”.",
-  "Algumas levam alguns dias e tempo no hotel, mas várias podem ser concluídas rapidamente.",
-  'Há vários vídeos de como liberar as trocas, basta procurar no Youtube por: "COMO LIBERAR AS TROCAS NO HABBO"',
-  "para ter mais detalhes e informações sobre o assunto. Lembre-se que somente com elas ativadas poderá receber seu pagamento diário.",
+  "III - EsPCEx - ESCOLA PREPARATÓRIA DE CADETES (Balão Verde)",
+
+  "A Escola Preparatória de Cadetes é um período composto por três etapas, as quais determinam a aprovação ou",
+  "a reprovação de um Aluno, sendo elas:",
+  "aulas, atividades e prova. Caso aprovado, o Aluno assumirá a patente de Cadete, caso reprovado,",
+  "será rebaixado à patente de 3° Sargento.",
+  "Dúvidas?",
+
+  "IV - AMAN - ACADEMIA MILITAR DAS AGULHAS NEGRAS (Balão Verde)",
+
+  "A Academia Militar das Agulhas Negras é um período composto pelas mesmas etapas da EsPCEx, as quais determinarão",
+  "a aprovação ou a reprovação de um Cadete, sendo elas: aulas, atividades e prova. Caso aprovado,",
+  "o Cadete assumirá o posto de Aspirante-a-Oficial, sendo assim, introduzido no Corpo de Oficiais para um período de observação.",
+  "Caso reprovado, será rebaixado à patente de 2° Sargento.",
   "Dúvidas?",
 ];
 
-const ProgramacaoInstrucaoSoldado = () => {
+const EditalMilitarII = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loginData, setLoginData] = useState(null);
   const navigate = useNavigate();
@@ -130,9 +126,9 @@ const ProgramacaoInstrucaoSoldado = () => {
         }}
       />
 
-      <Title level={2}>PIS</Title>
+      <Title level={2}>EMII</Title>
       <Text type="secondary" style={{ fontSize: "12px" }}>
-        Programa de Instrução ao Soldado
+        Edital Militar II
       </Text>
 
       <div
@@ -204,4 +200,4 @@ const ProgramacaoInstrucaoSoldado = () => {
   );
 };
 
-export default ProgramacaoInstrucaoSoldado;
+export default EditalMilitarII;

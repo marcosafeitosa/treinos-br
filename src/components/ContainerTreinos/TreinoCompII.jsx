@@ -11,60 +11,60 @@ import Clipboard from "clipboard";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
- "I - Introdução. (Balão Verde)",
-    "Seja bem-vindo(a) ao Treinamento Complementar II do Exército Brasileiro.",
-    "Eu sou o Segunto Tenente Therus e irei treiná-lo(a).",
-    "Não durma durante o treinamento para não ser auto-kickado(a).",
-    "Responda às perguntas com \"Sim, Senhor\", e \"Não, Senhor\".",
-    "Se aprovado(a), ao final do treinamento receberá a sigla Tc2 e poderá auxiliar os Treinamentos Básicos e os Treinamentos Complementares I.",
-    "Se reprovado(a), terá a chance de refazer o treinamento em outro momento.",
-    "O treinamento está dividido em três partes: Login, Relatório e ADR.",
-    "Dúvidas?",
-    "II - Login. (Balão Verde)",
-    "Acesse o nosso site: exbrhabbo,com (troque a , por .)",
-    "Clique em \"Login\" na parte superior direita.",
-    "Me avise quando conseguir, irei passar o seu acesso via sussurro.",
-    "Acessou?",
-    "Muito bem, agora irei ajudar você a mudar a senha.",
-    "No canto superior direito, clique na primeira letra ou caractere do seu nick.",
-    "Em seguida, clique em \"Editar perfil\".",
-    "Feito isso, abrirá a página para alteração da senha.",
-    "Coloque a senha atual, em seguida a senha nova e por último, confirme-a.",
-    "Escolha uma senha da qual possa se lembrar.",
-    "Caso se esqueça, teremos que conversar com um Oficial.",
-    "É importante que você mude a senha, pois se não alterá-la, não conseguirá realizar nenhuma ação no painel.",
-    "Dúvidas?",
-    "III - Relatório. (Balão Verde)",
-    "Sempre que for auxiliar um treino, deverá preencher o relatório de treinamento, onde terá informações referentes à instrução.",
-    "Esse relatório serve para que os Oficiais possam ter controle de treinadores, auxiliares, treinados aprovados e reprovados.",
-    "Durante o treinamento, os treinadores poderão necessitar do seu auxílio em algumas explicações de tópicos, portanto, esteja sempre atento ao sussurro.",
-    "Agora, pesquise no Youthube por: Exército Brasileiro - Treinamento Complementar II - Cm-Anonimo e assista ao vídeo sobre como preencher o relatório.",
-    "Você terá 10 minutos para assistir o vídeo todo. Caso caia do treinamento, pode voltar ao QG e pedir para um Oficial trazê-lo de volta.",
-    "Me comunique quando terminar de assistir.",
-    "Dúvidas?",
-    "Agora, iremos fazer um teste.",
-    "No canto superior direito do painel, clique na primeira letra ou caractere do seu nick e em seguida, na opção “Criar relatório”.",
-    "Estarei passando algumas informações referente ao preenchimento.",
-    "IV - Área de Recrutas (ADR). (Balão Verde)",
-    "A Área de Recrutas é o local onde os alistados irão aguardar o treinamento.",
-    "Para acessar essa área, peça que o Oficial em MQG abra a “Porta Nave Espacial” que está à esquerda do QG.",
-    "Você deve entreter o Recruta enquanto o treinamento não é enviado.",
-    "Podendo perguntar se ele joga pelo PC ou Celular, se sabe falar em negrito, se é a primeira vez dele em Exércitos e coisas desse tipo.",
-    "Somente um praça pode acompanhar os recrutas por vez, além do treinador, dando preferência à menor patente e a quem ainda não pôde auxiliar.",
-    "Dúvidas?",
-    "V - Finalização. (Balão Verde)",
-    "Parabéns, está aprovado(a) no Treinamento Complementar II.",
-    "Agora você poderá auxiliar os Treinamentos Básicos I e II e os Treinamentos Complementares I.",
-    "Você também poderá ficar com os novos Recrutas na ADR até que chegue o momento do envio do treinamento.",
-    "E, como dito anteriormente, para auxiliar um treinamento você deve pedir para um Oficial e se dirigir até a ADR.",
-    "Pode alterar a sua sigla para Tc2, por favor."
+  "I - Introdução. (Balão Verde)",
+  "Seja bem-vindo(a) ao Treinamento Complementar II do Exército Brasileiro.",
+  "Eu sou o Segunto Tenente Therus e irei treiná-lo(a).",
+  "Não durma durante o treinamento para não ser auto-kickado(a).",
+  'Responda às perguntas com "Sim, Senhor", e "Não, Senhor".',
+  "Se aprovado(a), ao final do treinamento receberá a sigla Tc2 e poderá auxiliar os Treinamentos Básicos e os Treinamentos Complementares I.",
+  "Se reprovado(a), terá a chance de refazer o treinamento em outro momento.",
+  "O treinamento está dividido em três partes: Login, Relatório e ADR.",
+  "Dúvidas?",
+  "II - Login. (Balão Verde)",
+  "Acesse o nosso site: exbrhabbo,com (troque a , por .)",
+  'Clique em "Login" na parte superior direita.',
+  "Me avise quando conseguir, irei passar o seu acesso via sussurro.",
+  "Acessou?",
+  "Muito bem, agora irei ajudar você a mudar a senha.",
+  "No canto superior direito, clique na primeira letra ou caractere do seu nick.",
+  'Em seguida, clique em "Editar perfil".',
+  "Feito isso, abrirá a página para alteração da senha.",
+  "Coloque a senha atual, em seguida a senha nova e por último, confirme-a.",
+  "Escolha uma senha da qual possa se lembrar.",
+  "Caso se esqueça, teremos que conversar com um Oficial.",
+  "É importante que você mude a senha, pois se não alterá-la, não conseguirá realizar nenhuma ação no painel.",
+  "Dúvidas?",
+  "III - Relatório. (Balão Verde)",
+  "Sempre que for auxiliar um treino, deverá preencher o relatório de treinamento, onde terá informações referentes à instrução.",
+  "Esse relatório serve para que os Oficiais possam ter controle de treinadores, auxiliares, treinados aprovados e reprovados.",
+  "Durante o treinamento, os treinadores poderão necessitar do seu auxílio em algumas explicações de tópicos, portanto, esteja sempre atento ao sussurro.",
+  "Agora, pesquise no Youthube por: Exército Brasileiro - Treinamento Complementar II - Cm-Anonimo e assista ao vídeo sobre como preencher o relatório.",
+  "Você terá 10 minutos para assistir o vídeo todo. Caso caia do treinamento, pode voltar ao QG e pedir para um Oficial trazê-lo de volta.",
+  "Me comunique quando terminar de assistir.",
+  "Dúvidas?",
+  "Agora, iremos fazer um teste.",
+  "No canto superior direito do painel, clique na primeira letra ou caractere do seu nick e em seguida, na opção “Criar relatório”.",
+  "Estarei passando algumas informações referente ao preenchimento.",
+  "IV - Área de Recrutas (ADR). (Balão Verde)",
+  "A Área de Recrutas é o local onde os alistados irão aguardar o treinamento.",
+  "Para acessar essa área, peça que o Oficial em MQG abra a “Porta Nave Espacial” que está à esquerda do QG.",
+  "Você deve entreter o Recruta enquanto o treinamento não é enviado.",
+  "Podendo perguntar se ele joga pelo PC ou Celular, se sabe falar em negrito, se é a primeira vez dele em Exércitos e coisas desse tipo.",
+  "Somente um praça pode acompanhar os recrutas por vez, além do treinador, dando preferência à menor patente e a quem ainda não pôde auxiliar.",
+  "Dúvidas?",
+  "V - Finalização. (Balão Verde)",
+  "Parabéns, está aprovado(a) no Treinamento Complementar II.",
+  "Agora você poderá auxiliar os Treinamentos Básicos I e II e os Treinamentos Complementares I.",
+  "Você também poderá ficar com os novos Recrutas na ADR até que chegue o momento do envio do treinamento.",
+  "E, como dito anteriormente, para auxiliar um treinamento você deve pedir para um Oficial e se dirigir até a ADR.",
+  "Pode alterar a sua sigla para Tc2, por favor.",
 ];
 
 const patenteMap = {
   "Terceiro Sargento": "Sargento",
   "Segundo Sargento": "Sargento",
   "Primeiro Sargento": "Sargento",
-  "Subtenente": "Subtenente",
+  Subtenente: "Subtenente",
   "Aluno da EsPCEx": "Aluno",
   "Cadete da AMAN": "Cadete",
 };
@@ -238,20 +238,37 @@ const TreinoCompI = () => {
       <div
         style={{
           position: "fixed",
-          bottom: 20,
+          bottom: 30,
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
-          gap: "20px",
+          gap: "35px",
         }}
       >
-        <Button icon={<ArrowLeftOutlined />} onClick={handlePrevious}>
+        <Button
+          icon={<ArrowLeftOutlined />}
+          onClick={handlePrevious}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Anterior
         </Button>
-        <Button icon={<ArrowRightOutlined />} onClick={handleNext}>
+        <Button
+          icon={<ArrowRightOutlined />}
+          onClick={handleNext}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Próximo
         </Button>
-        <button ref={copyButtonRef} style={{ display: "none" }}></button>
       </div>
     </Card>
   );

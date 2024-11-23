@@ -12,6 +12,12 @@ import ModuloOrtografico from "./components/ContainerTreinos/ModuloOrtografico.j
 import NotFound from "./components/NotFound/NotFound.jsx";
 import ProgramacaoInstrucaoSoldado from './components/ContainerTreinos/ProgramaInstrucaoSoldado';
 import ProgramacaoInstrucaoPracas from "./components/ContainerTreinos/ProgramaInstrucaoPracas.jsx";
+import ModuloExtraMilitar from './components/ContainerTreinos/ModuloExtraMilitar';
+import SegurancaVirtual from './components/ContainerTreinos/SegurancaVirtual';
+import ModComportamentoPostura from './components/ContainerTreinos/ModComportamentoPostura';
+import EditalMilitarI from './components/ContainerTreinos/EditalMilitarI';
+import EditalMilitarII from './components/ContainerTreinos/EditalMilitarII';
+import ModuloFidelizacaoPracas from "./components/ContainerTreinos/ModuloFidelizacaoPracas.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,9 +30,15 @@ root.render(
       <Route path="/treino-basico-ii" element={<TreinoBasicoII />} />
       <Route path="/treino-comp-i" element={<TreinoCompI />} />
       <Route path="/treino-comp-ii" element={<TreinoCompII />} />
-      <Route path="/modulo-ortografico" element={<ModuloOrtografico />} />
       <Route path="/programa-instrucao-soldado" element={<ProgramacaoInstrucaoSoldado />} />
+      <Route path="/modulo-ortografico" element={<ModuloOrtografico />} />
       <Route path="/programa-instrucao-pracas" element={<ProgramacaoInstrucaoPracas />} />
+      <Route path="/modulo-extra-militar" element={<ModuloExtraMilitar />} />
+      <Route path="/seguranca-virtual" element={<SegurancaVirtual />} />
+      <Route path="/modulo-comportamento-postura" element={<ModComportamentoPostura />} />
+      <Route path="/edital-militar-i" element={<EditalMilitarI />} />
+      <Route path="/edital-militar-ii" element={<EditalMilitarII />} />
+      <Route path="/modulo-fidelizacao-pracas" element={<ModuloFidelizacaoPracas />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </Router>

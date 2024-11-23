@@ -78,14 +78,14 @@ const paragrafoArray = [
   "Parabéns, está aprovado(a) no Treinamento Complementar I.",
   "Agora você pode realizar o Recrutamento Externo.",
   "Altere sua sua missão para: [Ex.BR] Cabo <Tc1",
-  ">"
+  ">",
 ];
 
 const patenteMap = {
   "Terceiro Sargento": "Sargento",
   "Segundo Sargento": "Sargento",
   "Primeiro Sargento": "Sargento",
-  "Subtenente": "Subtenente",
+  Subtenente: "Subtenente",
   "Aluno da EsPCEx": "Aluno",
   "Cadete da AMAN": "Cadete",
 };
@@ -259,20 +259,37 @@ const TreinoCompI = () => {
       <div
         style={{
           position: "fixed",
-          bottom: 20,
+          bottom: 30,
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
-          gap: "20px",
+          gap: "35px",
         }}
       >
-        <Button icon={<ArrowLeftOutlined />} onClick={handlePrevious}>
+        <Button
+          icon={<ArrowLeftOutlined />}
+          onClick={handlePrevious}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Anterior
         </Button>
-        <Button icon={<ArrowRightOutlined />} onClick={handleNext}>
+        <Button
+          icon={<ArrowRightOutlined />}
+          onClick={handleNext}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Próximo
         </Button>
-        <button ref={copyButtonRef} style={{ display: "none" }}></button>
       </div>
     </Card>
   );

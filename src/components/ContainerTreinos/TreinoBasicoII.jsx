@@ -24,19 +24,19 @@ const paragrafoArray = [
   "O MQG é o palanque no centro do batalhão. Ali, os Oficiais monitoram, supervisionam o Quartel e garantem a sua organização.",
   "Subir no MQG ocasiona em rebaixamento/demissão.",
   "Dúvidas?",
-  
+
   "ADO (Área de Oficiais):",
   "A ADO é o local reservado aos Oficiais, ou seja, os sofás brancos para quando não houver espaço em GP ou PAR..",
   "Nunca entre na Área de Oficiais - ADO, ou estará sujeito a banimento do Exército Brasileiro.",
   "Dúvidas?",
-  
+
   "III - Centro de Instrução (CI). (Balão Verde)",
   "O CI são os tapetes brancos e pretos no andar de baixo do Quartel-General.",
   "Os treinadores utilizam os tapetes pretos e os treinados utilizam os tapetes brancos.",
   "A sua presença no Centro de Instruções pode ser solicitada por um Oficial também,",
   "seja para promovê-lo, avaliá-lo em um treino ou convocá-lo para algum Grupo Externo.",
   "Dúvidas?",
-  
+
   "IV - Apresente-se. (Balão Verde)",
   'O "apresente-se" é utilizado em promoções e rebaixamentos de Praças e Oficiais.',
   'Após o Sentido/Atenção, o Oficial dirá: "fulano, apresente-se".',
@@ -52,13 +52,13 @@ const paragrafoArray = [
   "7. Dizer: Senhor(a), permissão para dispensa.",
   "8. Aguardar a dispensa e fazer as alterações em PAR - Sofás-vermelhos.",
   "Dúvidas até o momento?",
-  
+
   "Regras a serem seguidas ao se apresentar:",
   "1.  Estar sempre em frente ao Oficial, caso esteja torto, dê um passo para trás e fique reto para o Oficial.",
   "2. Realizar as alterações somente após a dispensa e em PAR.",
   '3. Nunca acenar utilizando o comando "o/".',
   'Dúvidas sobre o "Apresente-se"?',
-  
+
   "V - Finalização. (Balão Verde)",
   "Parabéns, você está aprovado no Treinamento Básico II. Agora está apto a ser promovido(a) no Quartel.",
   "Agora, altere sua missão para [Ex.BR] Soldado Estrela."
@@ -240,22 +240,39 @@ const TreinoBasicoII = () => {
       </div>
 
       <div
-        style={{
+         style={{
           position: "fixed",
-          bottom: 20,
+          bottom: 30,
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
-          gap: "20px",
+          gap: "35px",
         }}
       >
-        <Button icon={<ArrowLeftOutlined />} onClick={handlePrevious}>
+        <Button
+          icon={<ArrowLeftOutlined />}
+          onClick={handlePrevious}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Anterior
         </Button>
-        <Button icon={<ArrowRightOutlined />} onClick={handleNext}>
+        <Button
+          icon={<ArrowRightOutlined />}
+          onClick={handleNext}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Próximo
         </Button>
-        <button ref={copyButtonRef} style={{ display: "none" }}></button>
       </div>
     </Card>
   );

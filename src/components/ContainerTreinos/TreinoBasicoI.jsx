@@ -24,15 +24,15 @@ const paragrafoArray = [
   'Você deve se dirigir a um Oficial usando "Senhor(a)".',
   "Exemplo: Sim, senhor(a)/Não, senhor(a).",
   "Dúvidas?",
-  
-  
+
+
   "II - Pagamentos. (Balão Verde)",
   "Após aprovado(a) neste treinamento, você será um Soldado do Exército Brasileiro",
   "sendo assim, possuirá direito a pagamentos.",
   "Estes ocorrem 4x ao dia, horários: 12h, 15h, 18h e 21h.",
   "Soldados ganham 4 mobis, Soldado Estrela 5 mobis e Cabos 6 mobis.",
   "Dúvidas?",
-  
+
 
   "III - Negrito. (Balão Verde)",
   "O negrito é obrigatório nas dependências do Exército Brasileiro.",
@@ -58,7 +58,7 @@ const paragrafoArray = [
   "2. Descansar/À vontade.",
   "Você irá se sentar novamente no seu assento.",
   "Quando for dado esse comando, você deverá retornar ao trabalho.",
-  "Ambos os comandos devem ser executados em 5 segundos, caso contrário, poderá ir para fora do QG.", 
+  "Ambos os comandos devem ser executados em 5 segundos, caso contrário, poderá ir para fora do QG.",
   "Mas poderá retornar normalmente.",
   "Dúvidas?",
 
@@ -73,13 +73,13 @@ const paragrafoArray = [
   "Para assumir alguém, fique a um quadrado de distância atrás do Oficial ou Praça que irá assumir e digite",
   '"Assumo, [Patente]."',
   "Dúvidas?",
-  
+
   "2. Preencha a Retaguarda (PAR).",
   "O PAR são os sofás-vermelhos atrás dos GP's.",
   "Lugar onde você irá esperar por alguma função, caso todas estejam ocupadas.",
   "Se tiver lugar no GP ou um superior sentado, busque assumir o posto.",
   "Dúvidas?",
-  
+
   "3. Esteiras",
   "É o local onde você irá se ausentar. As esteiras ficam próximas das escadas, ao lado direito do Quartel.",
   "Basta clicar em usar a “Máquina de Ticket” que você será movido(a) para elas",
@@ -107,7 +107,7 @@ const paragrafoArray = [
   "Agora, altere sua missão para [Ex.BR] Soldado",
   'Se junte ao grupo "Exército Brasileiro - Amigos" e favorite o grupo.',
   "Sabe fazer essas duas coisas que lhe pedi?",
-  
+
   "Adicionar missão - Não copie. (Balão Verde)",
   "Para adicionar a patente na missão jogando no celular, faça o seguinte:",
   "Pressione o dedo em seu avatar, clique no seu nome/nick na lista que apareceu.",
@@ -115,12 +115,12 @@ const paragrafoArray = [
   "Entre o nome e a imagem tem um espaço vazio na cor azul, clique nesse espaço e abrirá um campo de texto.",
   "Abrindo o campo de texto digite na sua missão o seguinte:",
   "[Ex.BR] Soldado",
-  
+
   "Para adicionar a missão no computador, faça o seguinte:",
   "Clique em seu avatar, no canto inferior direito aparecerá a imagem do seu boneco",
   "Abaixo da imagem terá um um espaço/retângulo na cor cinza claro, clique nesse espaço escreva o seguinte :",
   "[Ex.BR] Soldado",
-  
+
 ];
 
 const patenteMap = {
@@ -306,22 +306,39 @@ const TreinoBasicoI = () => {
       </div>
 
       <div
-        style={{
+         style={{
           position: "fixed",
-          bottom: 20,
+          bottom: 30,
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
-          gap: "20px",
+          gap: "35px",
         }}
       >
-        <Button icon={<ArrowLeftOutlined />} onClick={handlePrevious}>
+        <Button
+          icon={<ArrowLeftOutlined />}
+          onClick={handlePrevious}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Anterior
         </Button>
-        <Button icon={<ArrowRightOutlined />} onClick={handleNext}>
+        <Button
+          icon={<ArrowRightOutlined />}
+          onClick={handleNext}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Próximo
         </Button>
-        <button ref={copyButtonRef} style={{ display: "none" }}></button>
       </div>
     </Card>
   );

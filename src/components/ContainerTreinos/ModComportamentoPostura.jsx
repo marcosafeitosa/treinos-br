@@ -10,46 +10,52 @@ import { useNavigate } from "react-router-dom";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-  "I — INTRODUÇÃO (Balão Verde)",
-  "Programa de Instrução ao Soldado - PIS",
-  "Eu faço parte do Grupo de Supervisores e serei o responsável em lhe aplicar essa Palestra hoje.",
-  "Nessa palestra entraremos em alguns pontos superficiais a fim de instruir os novos membros, sanando todas as dúvidas possíveis sobre nossa instituição.",
+  "I - INTRODUÇÃO (Balão Verde)",
 
-  "II — EXÉRCITO BRASILEIRO (Balão Verde)",
-  "O Exército Brasileiro do Marechal Cm-Anonimo criado em 2021 tem o intuito de trazer ao jogador sensação de estar realmente participando de um Exército na vida real.",
-  "Ou seja, trazemos treinamentos, grupos externos e muitas outras coisas que irá encontrar em sua caminhada aqui conosco.",
-
-  "III — LOCAIS DO QUARTEL GENERAL (Balão Verde)",
-
-  "1. Guarda-Portão (GP).",
-  "São as “Cadeiras Majestosas” que ficam localizadas na parte de frente do Quartel General.",
-  "Sua principal função no QG como Soldado em GP é realizar o alistamento dos civis que irão comparecer no GP.",
-  "Assim que o civil sentar, deverá perguntar se o mesmo deseja se alistar.",
-  "Exemplo: Fulano, deseja se alistar?",
-  'Caso ele diga sim, utilize o comando ":liberar". Caso ele não queira ou esteja atrapalhando, sussurre com um Oficial.',
+  "Módulo de Comportamento e Postura:",
+  "A palestra de Módulo de Comportamento e Postura tem como objetivo instruir os militares sobre a importância da conduta exemplar",
+  ",e da postura profissional nas diversas situações do âmbito militar.",
+  "Para que você como praça caminhe de forma correta, é necessário obedecer algumas normas, com o fim de obter um melhor",
+  "relacionamento entre todos, e isso ocorre principalmente a partir do entendimento sobre os três tópicos que veremos nesta palestra:",
+  "valores, deveres e ética.",
   "Dúvidas?",
 
-  "2. Centro de Instrução (CI).",
-  "O Centro de Instrução (CI) é o local utilizado para a realização de promoções, auxílios e treinamentos quando não enviados nas devidas salas.",
-  "O CI são os tapetes brancos e pretos localizados na parte esquerda do Quartel General.",
-  "Tapetinho branco para quem está instruindo/promovendo;",
-  "Tapetinho preto para quem está recebendo a instrução/promoção.",
-  "Você em seu atual posto de Soldado, só poderá ir até o CI quando solicitado por algum Praça/Oficial capacitado para lhe instruir no mesmo.",
-  ". As instruções do CI são aplicadas individualmente, portanto, será passada para você via sussurro.",
+  "II - VALORES (Balão Verde)",
+
+  "Dentro de uma instituição militar, a ênfase nos valores é crucial para o desenvolvimento tanto do militar quanto da instituição.",
+  "Os valores, como integridade, disciplina, lealdade e respeito, não apenas orientam o comportamento individual,",
+  "mas também fortalecem o espírito de equipe.",
+  "Ao promover uma cultura baseada em princípios éticos, os militares desenvolvem a confiança mútua e a resiliência necessária",
+  "para enfrentar os desafios nas diversas funções durante o dia a dia.",
+  "Essa fundação de valores não apenas molda a conduta do militar, mas também contribui para a imagem e reputação dentro da instituição.",
+
+  "III - DEVERES (Balão Verde)",
+
+  "Conforme o Exército Brasileiro real, aqui existem deveres morais e deveres jurídicos. O dever moral é algo voluntário,",
+  "ou seja, sem imposição legal para seu cumprimento, por exemplo: honestidade, sinceridade, honradez, lealdade, justiça,",
+  "não pensar em enganar e agir sempre de consciência limpa. Já o dever jurídico é imposto por nossas leis, normas, diretrizes",
+  "ordens, entre outros, algo que deve ser seguido à risca, com possível penalidade, por exemplo: respeito à hierarquia,",
+  "cumprimento de ordens, fidelidade à sua instituição, respeito com o próximo, etc.",
   "Dúvidas?",
 
-  "IV — ATIVAÇÃO DAS TROCAS (Balão Verde)",
-  "Você como Soldado do Exército possui direito ao pagamento que é realizado 4 vezes por dia.",
-  "Caso suas trocas ainda não estejam ativadas, você precisa ativá-las para poder negociar e assim receber seus pagamentos.",
-  "Como saber o que preciso fazer para ativar as minhas trocas?",
-  "Simples: você precisa procurar pelas Conquistas do seu usuário no jogo e realizar todas as ações das abas de “Tutorial” e “Trocas Ativadas”.",
-  "Algumas levam alguns dias e tempo no hotel, mas várias podem ser concluídas rapidamente.",
-  'Há vários vídeos de como liberar as trocas, basta procurar no Youtube por: "COMO LIBERAR AS TROCAS NO HABBO"',
-  "para ter mais detalhes e informações sobre o assunto. Lembre-se que somente com elas ativadas poderá receber seu pagamento diário.",
+  "IV - ÉTICA (Balão Verde)",
+
+  "A ética militar é algo muito importante para que a instituição flua de forma limpa e agradável.",
+  "Agora, passarei uma lista com importantes exemplos de ética que devem ser seguidos aqui:",
+
+  "I - Cultuar a verdade, a lealdade e a responsabilidade;",
+  "II - Respeitar o próximo, independentemente do grau hierárquico;",
+  "III - Observar as normas da boa educação;",
+  "IV - Cumprir e fazer cumprir as leis, os regulamentos, as instruções e as ordens das autoridades às quais estiver subordinado;",
+  "V - Ser justo e imparcial;",
+  "VI - Zelar sempre pelos preceitos da ética militar.",
+
+  "OBS: A violação dos deveres, valores e ética militares constitui, normalmente, transgressão disciplinar e pode gerar punições.",
+  "É necessário sempre sermos justos, íntegros e fiéis ao nosso trabalho, mantendo, da mesma maneira, a devida postura.",
   "Dúvidas?",
 ];
 
-const ProgramacaoInstrucaoSoldado = () => {
+const ModComportamentoPostura = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loginData, setLoginData] = useState(null);
   const navigate = useNavigate();
@@ -130,9 +136,9 @@ const ProgramacaoInstrucaoSoldado = () => {
         }}
       />
 
-      <Title level={2}>PIS</Title>
+      <Title level={2}>MCP</Title>
       <Text type="secondary" style={{ fontSize: "12px" }}>
-        Programa de Instrução ao Soldado
+        Módulo de Comportamento e Postura
       </Text>
 
       <div
@@ -204,4 +210,4 @@ const ProgramacaoInstrucaoSoldado = () => {
   );
 };
 
-export default ProgramacaoInstrucaoSoldado;
+export default ModComportamentoPostura;

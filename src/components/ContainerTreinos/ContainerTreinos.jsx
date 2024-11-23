@@ -112,23 +112,6 @@ const ContainerTreinos = () => {
                   textAlign: "center",
                   cursor: "pointer",
                 }}
-                onClick={() => handleNavigate("/modulo-ortografico")}
-              >
-                <Title level={1}>MO</Title>
-                <Text type="secondary" style={{ fontSize: "12px" }}>
-                  Módulo Ortográfico
-                </Text>
-              </Card>
-            </Col>
-            <Col xs={24} sm={12} md={12} lg={6}>
-              <Card
-                bordered={false}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  textAlign: "center",
-                  cursor: "pointer",
-                }}
                 onClick={() => handleNavigate("/programa-instrucao-soldado")}
               >
                 <Title level={1}>PIS</Title>
@@ -138,7 +121,25 @@ const ContainerTreinos = () => {
               </Card>
             </Col>
 
-             <Col xs={24} sm={12} md={12} lg={6}>
+            <Col xs={24} sm={12} md={12} lg={6}>
+              <Card
+                bordered={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  textAlign: "center",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleNavigate("/modulo-ortografico")}
+              >
+                <Title level={1}>MO</Title>
+                <Text type="secondary" style={{ fontSize: "12px" }}>
+                  Módulo Ortográfico
+                </Text>
+              </Card>
+            </Col>
+
+            <Col xs={24} sm={12} md={12} lg={6}>
               <Card
                 bordered={false}
                 style={{
@@ -152,6 +153,114 @@ const ContainerTreinos = () => {
                 <Title level={1}>PIP</Title>
                 <Text type="secondary" style={{ fontSize: "12px" }}>
                   Programa de Instrução aos Praças
+                </Text>
+              </Card>
+            </Col>
+
+            <Col xs={24} sm={12} md={12} lg={6}>
+              <Card
+                bordered={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  textAlign: "center",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleNavigate("/modulo-extra-militar")}
+              >
+                <Title level={1}>MEM</Title>
+                <Text type="secondary" style={{ fontSize: "12px" }}>
+                  Módulo Extra Militar
+                </Text>
+              </Card>
+            </Col>
+
+            <Col xs={24} sm={12} md={12} lg={6}>
+              <Card
+                bordered={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  textAlign: "center",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleNavigate("/seguranca-virtual")}
+              >
+                <Title level={1}>SV</Title>
+                <Text type="secondary" style={{ fontSize: "12px" }}>
+                  Segurança Virtual
+                </Text>
+              </Card>
+            </Col>
+
+            <Col xs={24} sm={12} md={12} lg={6}>
+              <Card
+                bordered={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  textAlign: "center",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleNavigate("/modulo-comportamento-postura")}
+              >
+                <Title level={1}>MCP</Title>
+                <Text type="secondary" style={{ fontSize: "12px" }}>
+                  Módulo de Comportamento e Postura
+                </Text>
+              </Card>
+            </Col>
+
+            <Col xs={24} sm={12} md={12} lg={6}>
+              <Card
+                bordered={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  textAlign: "center",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleNavigate("/edital-militar-i")}
+              >
+                <Title level={1}>EMI</Title>
+                <Text type="secondary" style={{ fontSize: "12px" }}>
+                  Edital Militar I
+                </Text>
+              </Card>
+            </Col>
+
+            <Col xs={24} sm={12} md={12} lg={6}>
+              <Card
+                bordered={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  textAlign: "center",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleNavigate("/edital-militar-ii")}
+              >
+                <Title level={1}>EMII</Title>
+                <Text type="secondary" style={{ fontSize: "12px" }}>
+                  Edital Militar II
+                </Text>
+              </Card>
+            </Col>
+
+            <Col xs={24} sm={12} md={12} lg={6}>
+              <Card
+                bordered={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  textAlign: "center",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleNavigate("/modulo-fidelizacao-pracas")}
+              >
+                <Title level={1}>MFP</Title>
+                <Text type="secondary" style={{ fontSize: "12px" }}>
+                  Módulo de Fidelização dos Praças
                 </Text>
               </Card>
             </Col>

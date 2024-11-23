@@ -10,46 +10,36 @@ import { useNavigate } from "react-router-dom";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-  "I — INTRODUÇÃO (Balão Verde)",
-  "Programa de Instrução ao Soldado - PIS",
-  "Eu faço parte do Grupo de Supervisores e serei o responsável em lhe aplicar essa Palestra hoje.",
-  "Nessa palestra entraremos em alguns pontos superficiais a fim de instruir os novos membros, sanando todas as dúvidas possíveis sobre nossa instituição.",
+  "I - INTRODUÇÃO (Balão Verde)",
 
-  "II — EXÉRCITO BRASILEIRO (Balão Verde)",
-  "O Exército Brasileiro do Marechal Cm-Anonimo criado em 2021 tem o intuito de trazer ao jogador sensação de estar realmente participando de um Exército na vida real.",
-  "Ou seja, trazemos treinamentos, grupos externos e muitas outras coisas que irá encontrar em sua caminhada aqui conosco.",
+  "Segurança Virtual",
+  "Bem-vindo ao curso de Segurança Virtual. Aqui traremos algumas noções de segurança e privacidade,",
+  "nos principais meios de comunicação digitais do mundo contemporâneo.",
+  "Permaneça em silêncio e preste atenção em todas as informações passadas nesta palestra.",
 
-  "III — LOCAIS DO QUARTEL GENERAL (Balão Verde)",
+  "II - CONSCIENTIZAÇÃO VIRTUAL (Balão Verde)",
 
-  "1. Guarda-Portão (GP).",
-  "São as “Cadeiras Majestosas” que ficam localizadas na parte de frente do Quartel General.",
-  "Sua principal função no QG como Soldado em GP é realizar o alistamento dos civis que irão comparecer no GP.",
-  "Assim que o civil sentar, deverá perguntar se o mesmo deseja se alistar.",
-  "Exemplo: Fulano, deseja se alistar?",
-  'Caso ele diga sim, utilize o comando ":liberar". Caso ele não queira ou esteja atrapalhando, sussurre com um Oficial.',
-  "Dúvidas?",
+  "Ao navegar online, mantenha-se atento aos links suspeitos em e-mails, mensagens e sites. Evite clicar em URLs desconhecidos,",
+  "especialmente aqueles que solicitam informações pessoais. Verifique a legitimidade examinando o endereço e procurando erros ortográficos.",
+  "Conscientização digital é a chave para prevenir ataques cibernéticos, portanto, pense antes de clicar e proteja-se contra ameaças virtuais.",
 
-  "2. Centro de Instrução (CI).",
-  "O Centro de Instrução (CI) é o local utilizado para a realização de promoções, auxílios e treinamentos quando não enviados nas devidas salas.",
-  "O CI são os tapetes brancos e pretos localizados na parte esquerda do Quartel General.",
-  "Tapetinho branco para quem está instruindo/promovendo;",
-  "Tapetinho preto para quem está recebendo a instrução/promoção.",
-  "Você em seu atual posto de Soldado, só poderá ir até o CI quando solicitado por algum Praça/Oficial capacitado para lhe instruir no mesmo.",
-  ". As instruções do CI são aplicadas individualmente, portanto, será passada para você via sussurro.",
-  "Dúvidas?",
+  "III - SENHAS (Balão Verde)",
 
-  "IV — ATIVAÇÃO DAS TROCAS (Balão Verde)",
-  "Você como Soldado do Exército possui direito ao pagamento que é realizado 4 vezes por dia.",
-  "Caso suas trocas ainda não estejam ativadas, você precisa ativá-las para poder negociar e assim receber seus pagamentos.",
-  "Como saber o que preciso fazer para ativar as minhas trocas?",
-  "Simples: você precisa procurar pelas Conquistas do seu usuário no jogo e realizar todas as ações das abas de “Tutorial” e “Trocas Ativadas”.",
-  "Algumas levam alguns dias e tempo no hotel, mas várias podem ser concluídas rapidamente.",
-  'Há vários vídeos de como liberar as trocas, basta procurar no Youtube por: "COMO LIBERAR AS TROCAS NO HABBO"',
-  "para ter mais detalhes e informações sobre o assunto. Lembre-se que somente com elas ativadas poderá receber seu pagamento diário.",
+  "Manter suas senhas confidenciais é crucial para preservar sua privacidade online. Ao compartilhar senhas, você expõe",
+  "informações sensíveis a riscos de segurança.",
+  "Essas chaves digitais são a primeira linha de defesa contra invasões e protegem dados pessoais, financeiros e profissionais.",
+  "Mantenha suas senhas seguras, evite reutilização e atualize-as regularmente para fortalecer sua defesa cibernética.",
+  "Nada adianta ter uma senha sem saber usá-la, confira nossas dicas:",
+
+  "Nunca utilize a mesma senha em mais de três lugares.",
+  "Nunca passe seu acesso para ninguém, e também não anote, memorize ela.",
+  "Caso não consiga memorizar suas senhas ou tenha dificuldades para lembrar delas, evite anotar em celulares ou computadores,",
+  "que podem ser hackeados. Faça isso em algum caderno ou bloco de notas que tenha fisicamente em sua casa,",
+  "pois assim você se mantém mais seguro e as chances de ter seus dados roubados são bem menores.",
   "Dúvidas?",
 ];
 
-const ProgramacaoInstrucaoSoldado = () => {
+const SegurancaVirtual = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loginData, setLoginData] = useState(null);
   const navigate = useNavigate();
@@ -130,9 +120,9 @@ const ProgramacaoInstrucaoSoldado = () => {
         }}
       />
 
-      <Title level={2}>PIS</Title>
+      <Title level={2}>SV</Title>
       <Text type="secondary" style={{ fontSize: "12px" }}>
-        Programa de Instrução ao Soldado
+        Segurança Virtual
       </Text>
 
       <div
@@ -204,4 +194,4 @@ const ProgramacaoInstrucaoSoldado = () => {
   );
 };
 
-export default ProgramacaoInstrucaoSoldado;
+export default SegurancaVirtual;

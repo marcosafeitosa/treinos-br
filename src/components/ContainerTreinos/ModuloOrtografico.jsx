@@ -18,7 +18,7 @@ const paragrafoArray = [
   "Ter uma boa escrita também é um fator muito observado pelos Oficiais. Sendo boa, causa uma impressão positiva; sendo ruim, causa uma impressão negativa.",
   "Por esses e outros motivos é muito importante sempre buscarmos a melhor ortografia possível.",
   "Dúvidas?",
-  
+
   "II - USO DA VÍRGULA (Balão Verde)",
   "A vírgula é um sinal de pontuação que marca uma pequena pausa no texto e separa elementos de uma oração ou orações entre si dentro da mesma frase.",
   "Devido a importância de seu uso no dia a dia, serão explicadas as principais regras:",
@@ -182,19 +182,37 @@ const ModuloOrtografico = () => {
       </div>
 
       <div
-        style={{
+       style={{
           position: "fixed",
-          bottom: 20,
+          bottom: 30,
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
-          gap: "20px",
+          gap: "35px",
         }}
       >
-        <Button icon={<ArrowLeftOutlined />} onClick={handlePrevious}>
+        <Button
+          icon={<ArrowLeftOutlined />}
+          onClick={handlePrevious}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Anterior
         </Button>
-        <Button icon={<ArrowRightOutlined />} onClick={handleNext}>
+        <Button
+          icon={<ArrowRightOutlined />}
+          onClick={handleNext}
+          style={{
+            fontSize: "17px",
+            padding: "10px 20px",
+            height: "45px",
+            width: "150px",
+          }}
+        >
           Próximo
         </Button>
       </div>

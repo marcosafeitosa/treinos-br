@@ -10,46 +10,53 @@ import { useNavigate } from "react-router-dom";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-  "I — INTRODUÇÃO (Balão Verde)",
-  "Programa de Instrução ao Soldado - PIS",
-  "Eu faço parte do Grupo de Supervisores e serei o responsável em lhe aplicar essa Palestra hoje.",
-  "Nessa palestra entraremos em alguns pontos superficiais a fim de instruir os novos membros, sanando todas as dúvidas possíveis sobre nossa instituição.",
+  "I - INTRODUÇÃO (Balão Verde)",
 
-  "II — EXÉRCITO BRASILEIRO (Balão Verde)",
-  "O Exército Brasileiro do Marechal Cm-Anonimo criado em 2021 tem o intuito de trazer ao jogador sensação de estar realmente participando de um Exército na vida real.",
-  "Ou seja, trazemos treinamentos, grupos externos e muitas outras coisas que irá encontrar em sua caminhada aqui conosco.",
-
-  "III — LOCAIS DO QUARTEL GENERAL (Balão Verde)",
-
-  "1. Guarda-Portão (GP).",
-  "São as “Cadeiras Majestosas” que ficam localizadas na parte de frente do Quartel General.",
-  "Sua principal função no QG como Soldado em GP é realizar o alistamento dos civis que irão comparecer no GP.",
-  "Assim que o civil sentar, deverá perguntar se o mesmo deseja se alistar.",
-  "Exemplo: Fulano, deseja se alistar?",
-  'Caso ele diga sim, utilize o comando ":liberar". Caso ele não queira ou esteja atrapalhando, sussurre com um Oficial.',
+  "Módulo Extra Militar",
+  "O Plano de Carreira do Exército Brasileiro foi criado com o intuito de ajudar o Praça abordando assuntos que não são mencionados nos",
+  "treinamentos, como: hierarquia militar, patentes, patrocinadores, privilégios e packs.",
   "Dúvidas?",
 
-  "2. Centro de Instrução (CI).",
-  "O Centro de Instrução (CI) é o local utilizado para a realização de promoções, auxílios e treinamentos quando não enviados nas devidas salas.",
-  "O CI são os tapetes brancos e pretos localizados na parte esquerda do Quartel General.",
-  "Tapetinho branco para quem está instruindo/promovendo;",
-  "Tapetinho preto para quem está recebendo a instrução/promoção.",
-  "Você em seu atual posto de Soldado, só poderá ir até o CI quando solicitado por algum Praça/Oficial capacitado para lhe instruir no mesmo.",
-  ". As instruções do CI são aplicadas individualmente, portanto, será passada para você via sussurro.",
+  "II - HIERARQUIA MILITAR (Balão Verde)",
+
+  "A Hierarquia Militar é uma pirâmide de poder, com o topo sendo constituído pelo Sr. Cm-Anonimo e, a partir dele,",
+  "seus subordinados. Isso significa que, abaixo dele, você, como militar, pode exercer todas as patentes e funções.",
+  "Ela divide os militares em patentes, funções típicas e atípicas, fazendo assim com que responsabilidades sejam distribuídas",
+  "entre Oficiais e Praças, prezando sempre a melhor administração e organização possível para o Exército.",
+  "Vale reforçar a importância do uso correto dos tratamentos dentro do QG: Senhor/Senhora para Oficiais e patente para os Praças,",
+  "pois isso demonstra muito do seu respeito aos seus companheiros e à Hierarquia Militar à qual todos estão submetidos.",
   "Dúvidas?",
 
-  "IV — ATIVAÇÃO DAS TROCAS (Balão Verde)",
-  "Você como Soldado do Exército possui direito ao pagamento que é realizado 4 vezes por dia.",
-  "Caso suas trocas ainda não estejam ativadas, você precisa ativá-las para poder negociar e assim receber seus pagamentos.",
-  "Como saber o que preciso fazer para ativar as minhas trocas?",
-  "Simples: você precisa procurar pelas Conquistas do seu usuário no jogo e realizar todas as ações das abas de “Tutorial” e “Trocas Ativadas”.",
-  "Algumas levam alguns dias e tempo no hotel, mas várias podem ser concluídas rapidamente.",
-  'Há vários vídeos de como liberar as trocas, basta procurar no Youtube por: "COMO LIBERAR AS TROCAS NO HABBO"',
-  "para ter mais detalhes e informações sobre o assunto. Lembre-se que somente com elas ativadas poderá receber seu pagamento diário.",
+  "III - PATENTES (Balão Verde)",
+
+  "Estarei explicando sobre as patentes e funções do Exército Brasileiro, seguindo a Hierarquia Militar.",
+  "Patentes de Praças: Recruta, Soldado, Soldado Estrela, Cabo, Aluno da EsSA, Terceiro Sargento, Segundo Sargento,",
+  "Primeiro Sargento, Subtenente, Aluno da EsPCEx e Cadete da AMAN.",
+  "Patentes de Oficiais: Aspirante-a-Oficial, Segundo Tenente, Primeiro Tenente, Capitão, Major, Tenente-Coronel,",
+  "Coronel, General-de-Brigada, General-de-Divisão, General-de-Exército e Marechal.",
+  "Conforme você suba na hierarquia da instituição e alcance novas patentes, vai receber a oportunidade de ganhar novas funções",
+  "como a participação nos grupos externos. Caso venha a se tornar um Oficial futuramente, além dos grupos externos,",
+  "terá a oportunidade de fazer parte de uma das Companhias do Exército.",
+  "Dúvidas?",
+
+  "IV - PATROCINADORES, PRIVILÉGIOS E PACKS (Balão Verde)",
+
+  "Esses 3 grupos têm o intuito de dar exclusividade a quem comprar, cada um com uma finalidade específica.",
+  "Patrocinadores - Pode ficar sem boina no Quartel General, usar cores de peles diferentes e ainda pode usar",
+  "sua medalha de patrocinador (Hierarquia Militar 4). O valor dele é de 20 câmbios.",
+  "Privilégios - Concede benefícios, principalmente, aos participantes de eventos externos do Exército.",
+  "Dependendo do evento, é possível furar filas, ter acesso garantido aos eventos",
+  "(ainda que os quartos estejam lotados) e ser o host de rodadas.",
+  'Em eventos internos, é possível desbloquear uma "segunda vida" em eventos de kicke, o que também é bastante interessante.',
+  "O valor dele é de 10 câmbios.",
+
+  "Pack I - Pode usar óculos de tipos variados e cores variadas. O valor dele é de 7 câmbios.",
+  "Pack 2 - Pode usar bigodes e barbas de cores variadas. O valor dele é de 15 câmbios.",
+  "Pack 3 - Pode usar acessórios diferenciados como o coldre, fones de ouvido etc. O valor dele é de 30 câmbios.",
   "Dúvidas?",
 ];
 
-const ProgramacaoInstrucaoSoldado = () => {
+const ModuloExtraMilitar = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loginData, setLoginData] = useState(null);
   const navigate = useNavigate();
@@ -130,9 +137,9 @@ const ProgramacaoInstrucaoSoldado = () => {
         }}
       />
 
-      <Title level={2}>PIS</Title>
+      <Title level={2}>MEM</Title>
       <Text type="secondary" style={{ fontSize: "12px" }}>
-        Programa de Instrução ao Soldado
+        Módulo Extra Militar
       </Text>
 
       <div
@@ -204,4 +211,4 @@ const ProgramacaoInstrucaoSoldado = () => {
   );
 };
 
-export default ProgramacaoInstrucaoSoldado;
+export default ModuloExtraMilitar;
