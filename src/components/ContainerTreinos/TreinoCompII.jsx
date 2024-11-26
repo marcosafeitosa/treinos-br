@@ -12,15 +12,14 @@ const { Title, Text } = Typography;
 
 const paragrafoArray = [
   "I - Introdução. (Balão Verde)",
-
   "Seja bem-vindo ao Treinamento Complementar II.",
   "Eu sou o [patente] [nick] e irei treiná-lo.",
-  'Responda as perguntas com "Sim, [sua patente]" ou "Não, [sua patente].',
-  "Evite ficar inativo durante o treino.",
+  'Responda às perguntas com "Sim, Senhor", e "Não, Senhor".',
   "Se aprovado no treino, receberá a sigla Tc2 e poderá auxiliar treinamentos.",
   "Caso seja reprovado, terá a oportunidade de refazer o treino em outro momento.",
   "O treinamento está dividido em três partes:",
   "Login, relatório e Área de Recrutas (ADR).",
+  "Evite ficar inativo durante o treino.",
   "Dúvidas?",
 
   "II - Login. (Balão Verde)",
