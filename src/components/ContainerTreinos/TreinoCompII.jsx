@@ -15,21 +15,12 @@ const paragrafoArray = [
 
   "Seja bem-vindo ao Treinamento Complementar II.",
   "Eu sou o [patente] [nick] e irei treiná-lo.",
-  'Responda as perguntas com "Sim, [sua patente]" ou "Não, [sua patente]'.,
+  "Evite ficar inativo durante o treino.",
+  'Responda as perguntas com "Sim, [sua patente]" ou "Não, [sua patente].',
   "Se aprovado no treino, receberá a sigla Tc2 e poderá auxiliar treinamentos.",
   "Caso seja reprovado, terá a oportunidade de refazer o treino em outro momento.",
   "O treinamento está dividido em três partes:",
   "Login, relatório e Área de Recrutas (ADR).",
-  "Evite ficar inativo durante o treino.",
-  "Dúvidas?",
-
-  "Seja bem-vindo(a) ao Treinamento Complementar II do Exército Brasileiro.",
-  "Eu sou o Segunto Tenente Therus e irei treiná-lo(a).",
-  "Não durma durante o treinamento para não ser auto-kickado(a).",
-  'Responda às perguntas com "Sim, Senhor", e "Não, Senhor".',
-  "Se aprovado(a), ao final do treinamento receberá a sigla Tc2 e poderá auxiliar os Treinamentos Básicos e os Treinamentos Complementares I.",
-  "Se reprovado(a), terá a chance de refazer o treinamento em outro momento.",
-  "O treinamento está dividido em três partes: Login, Relatório e ADR.",
   "Dúvidas?",
 
   "II - Login. (Balão Verde)",
