@@ -40,7 +40,7 @@ const paragrafoArray = [
 
   "Agora, realizaremos um teste.",
   "Acesse: exbrhabbo,com (troque a vírgula por um ponto) e me informe quando estiver com o site aberto.",
-  "Agora pesquise pelo seu nick e informe alguma das informações: data de promoção, status ou quem realizou a sua última promoção.
+  "Agora pesquise pelo seu nick e informe alguma das informações: data de promoção, status ou quem realizou a sua última promoção.",
 
   "III. Posto de Verificação (PDV). (Balão Verde)",
   "O Posto de Verificação é responsável por verificar possíveis irregularidades em fardamento, missão, grupo e registro de todos os praças.",
