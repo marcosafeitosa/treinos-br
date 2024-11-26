@@ -15,8 +15,8 @@ const paragrafoArray = [
 
   "Seja bem-vindo ao Treinamento Complementar II.",
   "Eu sou o [patente] [nick] e irei treiná-lo.",
-  "Evite ficar inativo durante o treino.",
   'Responda as perguntas com "Sim, [sua patente]" ou "Não, [sua patente].',
+  "Evite ficar inativo durante o treino.",
   "Se aprovado no treino, receberá a sigla Tc2 e poderá auxiliar treinamentos.",
   "Caso seja reprovado, terá a oportunidade de refazer o treino em outro momento.",
   "O treinamento está dividido em três partes:",
