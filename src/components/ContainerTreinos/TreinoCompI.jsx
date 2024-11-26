@@ -54,7 +54,7 @@ const paragrafoArray = [
   ":ausente - envia o Praça de volta ao hall.",
   ":vestir - coloca o fardamento no Praça.",
   "Antes de liberar alguém, você precisa se certificar de que a missão, status, grupo favoritado e fardamento estão corretos,",
-  'de acordo com o site, e o perfil habilitado.",
+  "de acordo com o site, e o perfil habilitado.",
   "Enquanto estiver no PDV, você deverá usar o balão com a cor VERDE.",
   "Dúvidas?",
 
