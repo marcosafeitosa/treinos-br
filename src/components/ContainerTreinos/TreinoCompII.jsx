@@ -48,10 +48,10 @@ const paragrafoArray = [
   "Podemos começar a preenchê-lo?",
 
   "No horário de início, coloque o horário atual.",
-  "No Tipo de Treinamento escolha o Treinamento Básico I, na Sala, selecione a Sala que estamos.",
+  "No Tipo de Treinamento escolha o Treinamento Básico I, na Sala, selecione a Sala/Local que estamos.",
   "O oficial responsável por esse relatório em questão será o General-de-Exército pituxa214.",
   "Em Instrutor, pesquise meu nick e selecione-o.",
-  "Em auxiliar, caso seu nick não está selecionado, pesquise e selecione-o.",
+  "Em auxiliar, caso seu nick não esteja selecionado, pesquise e selecione-o.",
   'Em Treinados, será o nick do recruta que foi treinado, porém, para exemplos, escreva "fulano2024".',
   "O Horário de Fim é quando o treinamento acaba, ou seja, pode colocar o horário atual como exemplo.",
   "Em aprovados, clique e selecione o nick que aparece como sugestão, caso tenha sido aprovado.",
