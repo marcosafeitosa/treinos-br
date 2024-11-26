@@ -47,11 +47,18 @@ const paragrafoArray = [
   'No canto superior direito do painel, clique na primeira letra ou caractere do seu nick e selecione a opção "criar relatório".',
   "Podemos começar a preenchê-lo?",
 
-  "O oficial responsável por esse relatório em questão será o General-de-Exército pituxa214, clique no campo de responsáveis e a selecione.",
+  "No horário de início, coloque o horário atual.",
+  "No Tipo de Treinamento escolha o Treinamento Básico I, na Sala, selecione a Sala que estamos.",
+  "O oficial responsável por esse relatório em questão será o General-de-Exército pituxa214.",
+  "Em Instrutor, pesquise meu nick e selecione-o.",
+  "Em auxiliar, caso seu nick não está selecionado, pesquise e selecione-o.",
+  'Em Treinados, será o nick do recruta que foi treinado, porém, para exemplos, escreva "fulano2024".',
+  "O Horário de Fim é quando o treinamento acaba, ou seja, pode colocar o horário atual como exemplo.",
+  "Em aprovados, clique e selecione o nick que aparece como sugestão, caso tenha sido aprovado.",
   "No campo de observações sempre coloque as seguintes perguntas e as responda após a interrogação quando for enviar um relatório:",
   '1. Como é a ortografia do treinador? (Ex.: "Boa.") 2. Como foi a atitude do treinador? (Ex.: "Excelente.")',
   '3. Houve algo de anormal no treinamento? (Ex.: "Não houve nada de anormal.") 4. O treinador é paciente? (Ex.: "Sim.")',
-  "Após preencher as informações, clique em no botão 'ENVIAR - FUNDO VERDE', e me avise para eu pedir os dados do relatório ao Oficial",
+  "Após preencher as informações, clique em no botão 'ENVIAR - FUNDO VERDE', e me avise para eu pedir os dados do relatório ao Oficial.",
   
   "IV - Área de Recrutas (ADR). (Balão Verde)",
 
