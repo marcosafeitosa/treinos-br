@@ -16,7 +16,7 @@ const Login = () => {
   useEffect(() => {
     const loginData = localStorage.getItem("loginData");
     if (loginData) {
-      navigate("/");
+      navigate("/pagina-treinos");
     }
   }, [navigate]);
 
