@@ -11,26 +11,24 @@ import Clipboard from "clipboard";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
+  " ",
   "I - Introdução. (Balão Verde)",
   "Seja bem-vindo(a) ao Treinamento Básico I do Exército Brasileiro.",
   "Eu sou o Segundo Tenente Therus e irei treiná-lo(a) para sua aprovação.",
-  "Não durma durante o treinamento para não ser auto-kickado(a).",
+  "Evite a inatividade durante a explicação.",
   'Responda às perguntas usando "Sim, Senhor", e "Não, Senhor".',
-  "O Exército Brasileiro possui dois corpos docentes, são os Praças e os Oficiais.",
-  "Praças utilizam a camisa VERDE.",
+  "O Exército Brasileiro possui dois corpos docentes: os Praças e os Oficiais.",
+  "Os Praças utilizam a camisa VERDE. Dirija-se a eles pela patente..",
   "Para Praças, use o nick ou patente como tratamento.",
-  "Exemplo: Sim, Sargento/Não, Sargento.",
-  "Oficiais utilizam a camisa BRANCA.",
-  'Você deve se dirigir a um Oficial usando "Senhor(a)".',
-  "Exemplo: Sim, senhor(a)/Não, senhor(a).",
+  'Exemplo: "Sim, Sargento" ou "Não, Sargento".',
+  'Os Oficiais utilizam a camisa BRANCA. Dirija-se a eles com o termo: “Senhor(a)”.',
   "Dúvidas?",
 
 
   "II - Pagamentos. (Balão Verde)",
-  "Após aprovado(a) neste treinamento, você será um Soldado do Exército Brasileiro",
-  "sendo assim, possuirá direito a pagamentos.",
-  "Estes ocorrem 4x ao dia, horários: 12h, 15h, 18h e 21h.",
-  "Soldados ganham 4 mobis, Soldado Estrela 5 mobis e Cabos 6 mobis.",
+  "Após ser aprovado(a) neste treinamento, você se tornará um(a) Soldado do Exército Brasileiro e, consequentemente, terá direito a pagamentos.",
+  "Esses pagamentos ocorrem quatro vezes ao dia, nos horários de 12h, 15h, 18h e 21h.",
+  "Soldados recebem 4 mobis, Soldados Estrela recebem 5 mobis e Cabos recebem 6 mobis.",
   "Dúvidas?",
 
 
