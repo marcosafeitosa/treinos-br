@@ -11,7 +11,6 @@ import Clipboard from "clipboard";
 const { Title, Text } = Typography;
 
 const paragrafoArray = [
-  " ",
   "I - Introdução. (Balão Verde)",
   "Seja bem-vindo(a) ao Treinamento Básico I do Exército Brasileiro.",
   "Eu sou o Segundo Tenente Therus e irei treiná-lo(a) para sua aprovação.",
