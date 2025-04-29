@@ -322,7 +322,6 @@ const TreinoBasicoI = () => {
             width: "150px",
           }}
         >
-          Anterior
         </Button>
         <Button
           icon={<ArrowRightOutlined />}
@@ -334,7 +333,6 @@ const TreinoBasicoI = () => {
             width: "150px",
           }}
         >
-          Próximo
         </Button>
       </div>
     </Card>
